@@ -1,0 +1,111 @@
+O \LaTeX oferece a possibilidade de criar listas e tabelas para facilitar a leitura e compreensão do texto.
+
+\subsection{Listas}
+Existe dois tipos de listas em \LaTeX, listas ordenadas e não ordenadas. Para criação de listas não ordenadas utiliza-se o comando "\textbackslash begin\{itemize\} ... \textbackslash end\{itemize\}" juntamente com o comando "\textbackslash item":
+
+\begin{itemize}
+\item item0
+\item item1
+\item item2
+\end{itemize}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{itemize}
+\item item0
+\item item1
+\item item2
+\end{itemize}
+\end{verbatim}
+
+Para criação de listas ordenadas utiliza-se o comando "\textbackslash begin\{enumerate\} ... \textbackslash end\{enumerate\}" juntamente com o comando "\textbackslash item":
+
+\begin{enumerate}
+\item item0
+\item item1
+\item item2
+\end{enumerate}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{enumerate}
+\item item0
+\item item1
+\item item2
+\end{enumerate}
+\end{verbatim}
+
+Podem criar-se tabelas aninhadas que, caso numeradas, criam numeração automatica das tabelas internas com um simbolo diferente:
+
+\begin{enumerate}
+\item item0
+\begin{enumerate}
+\item item00
+\item item01
+\begin{enumerate}
+\item item010
+\item item111
+\item item212
+\end{enumerate}
+\item item02
+\begin{itemize}
+\item item020
+\item item121
+\item item222
+\end{itemize}
+\end{enumerate}
+\item item2
+\end{enumerate}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{enumerate}
+\item item0
+\begin{enumerate}
+\item item00
+\item item01
+\begin{enumerate}
+\item item010
+\item item111
+\item item212
+\end{enumerate}
+\item item02
+\begin{itemize}
+\item item020
+\item item121
+\item item222
+\end{itemize}
+\end{enumerate}
+\item item2
+\end{enumerate}
+\end{verbatim}
+
+\subsection{Tabelas}
+As tabelas em \LaTeX são um comando ligeiramente mais complexo que as listas. Uma tabela simples começa com o comando "\textbackslash begin\{table\}[mod] ... \textbackslash end\{table\}". Este modificador geralmente é "h" para "here", indicando que a tabela vai ser posta, se possivel, no lugar relativo ao codigo que a descreve. No interior deste comando é inserido outro "\textbackslash begin\{tabular\}\{tipo\}\textbackslash end\{tabular\}", seja o tipo a forma como os items estão dispostos horizontalmente, com ou sem linha vertical a separa-los, alinhados ao centro (c), à esquerda (l) ou à diretia (r). Para além destes é ainda possivel decidir quando existe uma quebra de linhas com o comando "\textbackslash \textbackslash" e se existirá uma linha horizontal entre as duas linhas com o comando "\textbackslash hline", items são separados por um e comercial "\& ":
+
+\begin{table}[h]
+\center
+\begin{tabular}{|c|l|r}
+\hline
+  & 0 & 1 \\ \hline
+0 & 00 & 10 \\ \hline
+1 & 01 & 11 \\ 
+\end{tabular}
+\end{table}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{table}[h]
+\center
+\begin{tabular}{|c|l|r}
+\hline
+  & 0 & 1 \\ \hline
+0 & 00 & 10 \\ \hline
+1 & 01 & 11 \\ 
+\end{tabular}
+\end{table}
+\end{verbatim}
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="importsInit"></div>
+<script>$(document).ready(function(){$("#importsInit").load("..\\Includables\\importsInit.html");});</script><!--inclui aqui a os imports , semelhante ao #include em C++-->
+
+<body>
+<div id="wrapper">
+    <header id="navBar">
+        <script>$(document).ready(function(){$("#navBar").load("..\\Includables\\navBar.html");});</script> <!--inclui aqui a barra de navegação , semelhante ao #include em C++-->
+    </header>
+
+    <h2>&emsp;&emsp;Ambiente de Testes do modo de Matemática</h2>
+    <iframe src="../../Testes/ConsolaDeTesteLatex.html" width="100%" scrolling="no" id="teste" onload="onloadf()"></iframe>
+
+    <p>Aqui pode ser testado codigo ~\LaTeX~, graças a biblioteca MathJax, o utilizador pode introduzir o codigo à esquerda e visualizar o output
+        na caixa da direita, tal como está exemplificado.<br>
+    </p>
+    <script>
+        var iframe;
+        function onloadf() {
+            iframe = document.getElementById("teste");
+            var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+            innerDoc.getElementById("latex").innerHTML = "$$e^{ln(TESTE!)}$$";
+            innerDoc.getElementById("orig").innerText = "$$e^{ln(TESTE!)}$$";
+        }
+
+        function load(text) {
+            var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+            innerDoc.getElementById("orig").innerText = text;           //copia o codigo LaTeX do botão associado
+            document.getElementById("teste").contentWindow.compile();  //corre a função que compila codigo LaTeX
+
+        }
+        window.onload =function onloadp() {
+            if(!document.cookie){
+                var data = new Date()
+                data.setMonth(data.getMonth()+12)
+                document.cookie = "num=0;expires=" + data + ";Path=/;"
+            }
+            loadUnlocks();
+        };
+        function loadUnlocks() {
+            var elementos = document.getElementsByTagName("th");
+
+            // o comando acima vai criar um array com todos os th da tabela ordenados pela ordem de "leitura" (esq -> dir, cima -> baixo)
+            var parsedCookie = parseInt(document.cookie.split(";")[0].split("=")[1],32).toString(2).split("");
+            // parsing dos unlockables para um array de variaveis logicas
+            var arrayBools = [];
+            for(var i = 0; i < 15 - parsedCookie.length;i++){arrayBools.push("0")}
+            parsedCookie.forEach((i)=>{arrayBools.push(i)})
+            for(i = 0; i < elementos.length; i++){
+                if(arrayBools[i] == "0"){
+                    elementos[i].innerHTML = "<h1>&#128274;</h1>"
+                }
+            }
+            /*esta solução cria um array de variaveis logicas, 1s e 0s e transforma-as na base 32 já que é maior suportada pelo parser do js
+            * depois guarda-as num cookie, em forma de string, de tamanho muito reduzido, 15 caracteres tornam-se 4 caracteres no maximo,
+            * é uma solução provavelmente demasiado complexa tendo em conta o problema, matar moscas com canhões...
+            * Todo o codigo é original */
+        }
+
+    </script>
+
+    <h2>Algumas sugestões de Teste: <span style="font-size: 10px;">(Clique para testar, para desbloquear visite as paginas do modo de matemática!!)</span></h2>
+    <!--apesar de semanticamente th ser um table heading, os estilos ja criados para th são adequados à tabela criada...-->
+    <table align="center" style='width: 100%;' >
+        <tr>
+            <th>
+                <h1 onclick="load('$$\\frac{a}{b}$$')">~\frac{a}{b}~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\pi$$')">~\pi~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\chi$$')">~\chi~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\sqrt{x^{p}_{b}}$$')">~\sqrt{x^{p}_{b}}~</h1>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <h1 onclick="load('$$\\sum \\limits_{a}^{b} f(x)$$')">~\sum \limits_{a}^{b} f(x)~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\int \\limits_{a}^{b} f(x)$$')">~\int \limits_{a}^{b} f(x)~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\lim \\limits_{a} f(x)$$')">~\lim \limits_{a} f(x)~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\prod \\limits_{a}^{b} f(x)$$')">~\prod \limits_{a}^{b} f(x)~</h1>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h1 onclick="load('$$\\infty$$')">~\infty~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\to$$')">~\to~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\dots$$')">~\dots~</h1>
+            </th>
+            <th>
+                <h1 onclick="load('$$\\log_e(e^{TOPP})$$')">~\log_e(e^{TOPP})~</h1>
+            </th>
+        </tr>
+        <tr>
+            <th >
+                <h1 onclick="load('$$\n'+
+'        \\begin{bmatrix}\n'+
+'        a & b & c \\\\\n'+
+'        d & \\ddots & \\vdots \\\\\n'+
+'        e & \\dots & f \\\\\n'+
+'        \\end{bmatrix}\n'+
+'        $$')">
+                    \begin{bmatrix}
+                    a & b & c \\
+                    d & \ddots & \vdots \\
+                    e & \dots & f \\
+                    \end{bmatrix}
+                </h1>
+            </th>
+            <th >
+                <h1 onclick='load("\\begin{cases}\n" +
+                "1 & \\text{ , se } x < 2 \\\\\n" +
+                "b & \\text{ , se } x \\le 2 \\\\\n" +
+                "\\end{cases}")'>
+                    \begin{cases}
+                    1 & \text{ , se } x < 2 \\
+                    b & \text{ , se } x \le 2 \\
+                    \end{cases}
+                </h1>
+            </th>
+            <th >
+                <h1 onclick="load('$$\\overbrace{a+a}^{2a} + \\underbrace{b+b}_{2b} = 2a + 2b$$')">~\overbrace{a+a}^{2a} + \underbrace{b+b}_{2b} = 2a + 2b~</h1>
+            </th>
+
+        </tr>
+    </table>
+
+    <div id="footer"></div>
+    <script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+</body>
+
+</html>

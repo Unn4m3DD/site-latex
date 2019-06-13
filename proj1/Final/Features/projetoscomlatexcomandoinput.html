@@ -1,0 +1,85 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        <h1>Projetos com ~\LaTeX~ utilizando o comando input</h1>
+		<p>
+            Na realização de projetos com ~\LaTeX~ é comum a situação de vários integrantes do projeto quererem editar o documento e interagirem com uma plataforma como o git. Neste caso, não podem, simultaneamente, editar o mesmo ficheiro ao mesmo tempo, o que cria uma necessidade de separar o documento em partes. Esta separação pode ser feita através do comando "\input{filepath/filename}. Este comando funciona de forma semelhante à instrução de compilador "\# include" em C++ copiando o conteúdo do ficheiro passado como argumento no sítio onde é invocada a função input. Um exemplo de uma separação seria criar um ficheiro para cada capítulo do livro/apresentação/tese e distribuir tarefas de maneira que os integrantes do projeto editassem apenas um documento de cada vez.
+        </p>
+        <p>
+            Exemplificando com este documento, no documento principal é utilizado o comando "\input{}" para importar outro ficheiro que contém a informação por capítulos:
+        </p>
+        <pre>
+            %documento principal<br>
+            \chapter{Introdução: História do \LaTeX}
+            \label{chap.introducao}
+            \input{textos/introducao.tex}
+            \chapter{Introdução à estrutura \LaTeX}
+            \input{textGenScripts/chapter.tex}
+        </pre>
+        <pre>
+            %documento de subcapítulos<br>
+            "textGenScripts/chapter.tex"
+            ...
+            \section{Filosofia}
+            \label{chap.filosofia}
+            \input{textos/filosofia.tex}
+
+            \section{Estrutura de Comandos}
+            \label{chap.estruturadecomandos}
+            \input{textos/estruturadecomandos.tex}
+
+            \section{Projetos com \LaTeX Comando input}
+            \label{chap.projetoscomlatexcomandoinput}
+            \input{textos/projetoscomlatexcomandoinput.tex}
+            ...
+            
+        </pre>
+        <pre>
+            %exemplo documento do subcapítulo em si
+            %"textos/projetoscomlatexcomandoinput.tex"
+            Na realização de projetos com \LaTeX é comum a situação de
+            vários integrantes do projeto quererem editar o documento e
+            interagirem com uma plataforma como o git. Neste caso, não
+            podem, simultaneamente, editar o mesmo ficheiro ao mesmo tempo,
+            o que cria uma
+            ...
+        </pre>
+        <p>
+            Uma ideia de utilização deste comando é a criação de um pequeno script para gerar o código repetitivo automaticamente dados os nomes dos capítulos. Na realização deste relatório foi utilizado python3 com esse objetivo:    
+        </p>
+        <pre>
+            file1 = open('chapter.tex','w')
+            for i  in ['Estrutura de Comandos','Criação Macros','Pacotes
+            \LaTeX','Caracteres Especiais', 'Listas e Tabelas','Disposição
+            e Organização de Texto','Modo Matemática','Criação Gráficos',
+            'Projetos com \LaTeX: Comando input','Referências a Documentos
+            Externos', 'Inclusão de Imagens','Fontes e Linguagens']:
+            a = i.replace(' ','').lower().replace('ç','c').replace('ã','a').replace('á','a').replace(':','').replace('\\','').replace('ê','e')
+            b = """
+            \section{"""+i+"""}
+            \label{chap."""+a+"""}
+            \input{textos/"""+a+""".tex}\n"""
+            file1.write(b)
+            file2 = open('../textos/' + a + '.tex','w')
+            file2.write("Escrever aqui Capitulo " + i)
+            file2.close()
+            file1.close()
+        </pre>
+			<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+			<div id="footer"></div>
+			<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

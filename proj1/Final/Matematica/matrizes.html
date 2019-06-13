@@ -1,0 +1,58 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        <h1>Matrizes</h1>
+		<p>Para representar matrizes em \LaTeX utiliza-se o comando "\<span></span>[\<span></span>{bmatrix} ... \end{bmatrix} \]" e uma
+			estrutura bastante semelhante às <a href="listas.html">listas</a>:
+			\begin{bmatrix}
+			a & b & c \\
+			d & \ddots & \vdots \\
+			e & \dots & f \\
+			\end{bmatrix}
+		</p>
+
+		<p>Gerado com o código: <br>
+			\[<br>
+			\<span></span>begin{bmatrix}<br>
+			a & b & c \\<br>
+			d & \ddots & \vdots \\<br>
+			e & \dots & f \\<br>
+			\end{bmatrix}<br>
+			\]<br>
+		</p>
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+            function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "\\begin{bmatrix}\n" +
+                    "\t\t\ta & b & c \\\\\n" +
+                    "\t\t\td & \\ddots & \\vdots \\\\\n" +
+                    "\t\t\te & \\dots & f \\\\\n" +
+                    "\t\t\t\\end{bmatrix}"
+                innerDoc.getElementById("orig").innerText = "\\begin{bmatrix}\n" +
+                    "\t\t\ta & b & c \\\\\n" +
+                    "\t\t\td & \\ddots & \\vdots \\\\\n" +
+                    "\t\t\te & \\dots & f \\\\\n" +
+                    "\t\t\t\\end{bmatrix}"
+                unlock([12])//função definida na navbar
+            }
+		</script>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

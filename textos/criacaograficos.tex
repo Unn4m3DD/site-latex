@@ -1,0 +1,183 @@
+O ambiente \LaTeX \,oferece a possibilidade de criar gráficos na própria linguagem sem necessidade de incluir imagens externas de outros sites por exemplo Geogebra ou Desmos.\\
+
+Para iniciar um ambiente de gráfico ortonormado de coordenadas entre x e y insere-se o comando "\textbackslash begin\{picture\}(x,y) ... \textbackslash end\{picture\}". Para que o gráfico seja visível em unidades predefinidas pode utilizar-se o comando "\textbackslash setlength{\textbackslash unitlength\}\{tamanho\}" com por exemplo 5cm. Por fim o comando para desenhar um linha é definido pelo vetor origem, o vetor direção e o tamanho da linha. O comando para instanciar a linha é "\textbackslash  put(VetorOrigem)\{\textbackslash line (VetorDireção)\{tamanhoDaLinha\}\}". Exemplificando a composição dos comandos descritos:\\\\\\
+
+\begin{center}
+
+\setlength{\unitlength}{5cm}
+\begin{picture}(1,1)
+\put(0,0){\line(0,1){1}}
+\put(1,0){\line(-1,0){1}}
+\put(0,1){\line(1,0){1}}
+\put(1,1){\line(0,-1){1}}
+\end{picture}
+
+\end{center}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{center}
+
+\setlength{\unitlength}{5cm}
+\begin{picture}(1,1)
+\put(0,0){\line(0,1){1}}
+\put(1,0){\line(-1,0){1}}
+\put(0,1){\line(1,0){1}}
+\put(1,1){\line(0,-1){1}}
+\end{picture}
+
+\end{center}
+\end{verbatim}
+
+
+Esta é a forma mais simples de criação de gráficos em \LaTeX , e tem as suas variações por exemplo com o comando "\textbackslash vector" em vez do "\textbackslash line", que vai criar uma variação com setas em vez de linhas:
+
+\begin{center}
+
+\setlength{\unitlength}{5cm}
+\begin{picture}(1,1)
+\put(0,0){\vector(0,1){1}}
+\put(1,0){\vector(-1,0){1}}
+\put(0,1){\vector(1,0){1}}
+\put(1,1){\vector(0,-1){1}}
+\end{picture}
+
+\end{center}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{center}
+
+\setlength{\unitlength}{5cm}
+\begin{picture}(1,1)
+\put(0,0){\vector(0,1){1}}
+\put(1,0){\vector(-1,0){1}}
+\put(0,1){\vector(1,0){1}}
+\put(1,1){\vector(0,-1){1}}
+\end{picture}
+
+\end{center}
+\end{verbatim}
+
+Podem criar-se circunferências com o comando "\textbackslash circle\{raio\}" e círculos com o comando "\textbackslash circle*\{raio\}":
+
+\begin{center}
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%desenhar Círculos
+\put(5,5){\circle{10}}
+\put(5,5){\circle*{1}}
+
+\end{picture}
+\end{center}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{center}
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%desenhar Círculos
+\put(5,5){\circle{10}}
+\put(5,5){\circle*{1}}
+
+\end{picture}
+\end{center}
+\end{verbatim}
+
+
+É possível também escrever textos nos gráficos gerados, assim, por exemplo um triângulo pode ter vértices nomeados. O comando para tal efeito é "\textbackslash put(Origem)\{\$texto\$\}". Exemplificando:
+
+\begin{center}
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%desenhar triângulo
+\put(3,3){\line(1,0){3}}
+\put(6,3){\line(0,1){4}}
+\put(6,7){\line(-3,-4){3}}
+%Letras Vértices
+\put(2.5,2.5){$A$}
+\put(6,2.5){$B$}
+\put(6,7){$C$}
+\end{picture}
+
+\end{center}
+
+
+
+Gerado com o código:
+\begin{verbatim}
+\begin{center}
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%desenhar triângulo
+\put(3,3){\line(1,0){3}}
+\put(6,3){\line(0,1){4}}
+\put(6,7){\line(-3,-4){3}}
+%Letras Vértices
+\put(2.5,2.5){$A$}
+\put(6,2.5){$B$}
+\put(6,7){$C$}
+\end{picture}
+
+\end{center}
+\end{verbatim}
+
+Para além destas existe também a funcionalidade de escrever arrays de objetos como linhas ou círculos com o comando "\textbackslash multiput(x,y)($\Delta$ x,$\Delta$ y)\\{n\}\{objeto\}. Por exemplo:
+
+\begin{center}
+
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%Desenhar Array de Vetores
+\multiput(1,5)(2,0){5}{\vector(0,-1){5}}
+%Desenhar Array de Círculos
+\multiput(1,5)(2,0){5}{\circle{2}}
+\end{picture}
+\end{center}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{center}
+
+\setlength{\unitlength}{5mm}
+\begin{picture}(10,10)
+
+%desenhar quadrado
+\put(0,0){\line(0,10){10}}
+\put(10,0){\line(-10,0){10}}
+\put(0,10){\line(10,0){10}}
+\put(10,10){\line(0,-10){10}}
+%Desenhar Array de Vetores
+\multiput(1,5)(2,0){5}{\vector(0,-1){5}}
+%Desenhar Array de Círculos
+\multiput(1,5)(2,0){5}{\circle{2}}
+\end{picture}
+\end{center}
+\end{verbatim}
+

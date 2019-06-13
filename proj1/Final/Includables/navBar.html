@@ -1,0 +1,149 @@
+<!-- Navbar -->
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="../../index.html"><h1>~\LaTeX~</h1></a>
+            </div>
+            <!-- end logo -->
+
+            <!-- top menu -->
+            <div class="navigation">
+                <nav>
+                    <ul class="nav topnav">
+                        <li class="active">
+                            <a href="../../index.html"><i class="icon-home"></i> Home </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"><i class="icon-search"></i> Features <i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Features/pacoteslatex.html">Pacotes ~\LaTeX~</a></li>
+                                <li><a href="../Features/caracteresespeciais.html">Caracteres Especiais</a></li>
+                                <li><a href="../Features/inclusaodeimagens.html">Inclusão de Imagens</a></li>
+                                <li class="dropdown"><a href="#">Listas e Tabelas<i class="icon-angle-right"></i></a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a href="../Matematica/listas.html">Listas</a></li>
+                                        <li><a href="../Matematica/tabelas.html">Tabelas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Modo de Matemática<i class="icon-angle-right"></i></a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a href="../Matematica/comoutilizaromododematematica.html">Como Utilizar o Modo de Matemática</a></li>
+                                        <li><a href="../Matematica/comandosmaiscomunsdomododematematica.html">Comandos mais Comuns do Modo de Matemática</a></li>
+                                        <li><a href="../Matematica/caracteresespeciaisdomododematematica.html">Caracteres Especiais do Modo de Matemática</a></li>
+                                        <li><a href="../Matematica/fracoes.html">Frações</a></li>
+                                        <li><a href="../Matematica/superscriptsesubscripts.html">SuperScripts e SubScripts</a></li>
+                                        <li><a href="../Matematica/radicais.html">Radicais</a></li>
+                                        <li><a href="../Matematica/integraissomatoriosprodutorioselimites.html">Integrais, Somatórios, Produtórios e Limites</a></li>
+                                        <li><a href="../Matematica/indexacaodeequacoes.html">Indexação de Equações</a></li>
+                                        <li><a href="../Matematica/matrizes.html">Matrizes</a></li>
+                                        <li><a href="../Matematica/chavetas.html">Chavetas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../Features/criacaograficos.html">Criação de Gráficos</a></li>
+                                <li><a href="../Features/projetoscomlatexcomandoinput.html">Projetos com ~\LaTeX~ utilizando o comando input</a></li>
+                                <li><a href="../Features/referenciasadocumentosexternos.html">Referências a Documentos Externos</a></li>
+                                <li><a href="../Features/fonteselinguagens.html">Fontes e Estilos de Texto</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                        <li><a href="../Outros/historia.html"> <i class="icon-book"></i> História</a></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="icon-text-height"></i>Estrutura<i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li class="dropdown"><a href="#">Filosofia ~\LaTeX~<i class="icon-angle-right"></i></a>
+                                    <ul class="dropdown-menu sub-menu">
+                                        <li><a href="../Filosofia/pros.html">Prós</a></li>
+                                        <li><a href="../Filosofia/contras.html">Contras</a></li>
+                                        <li><a href="../Filosofia/wysiwym.html">WYSIWYM</a></li>
+                                        <li><a href="../Filosofia/wysiwyg.html">WYSIWYG</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="../Features/estruturadecomandos.html">Estrutura de Comandos ~\LaTeX~</a>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="../Outros/about.html"><i class="icon-question-sign"></i>Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end menu -->
+
+        </div>
+    </div>
+</div>
+<section id="subintro">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <ul class="breadcrumb">
+                    Podes a qualquer momento testar os conhecimentos sobre ~\LaTeX~ neste site, <li ><a class="btn btn-inverse btn-rounded btn-mini" href="#" id="navLink">Desbloqueia!</a></li>
+                </ul>
+            </div>
+            <div class="span4">
+                <div class="search" >
+                    <a class="btn btn-inverse btn-rounded btn-large" href="../AmbienteTeste/AmbienteTeste.html" style="color: white; font-size: 15pt;text-decoration: none;">Experimenta!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function f5pag(){
+            if(!document.cookie){
+                var data = new Date()
+                data.setMonth(data.getMonth()+12)
+                document.cookie = "num=0;expires=" + data + ";Path=/;"
+            }
+        paginas = ["fracoes.html","caracteresespeciaisdomododematematica.html","caracteresespeciaisdomododematematica.html","radicais.html",
+        "integraissomatoriosprodutorioselimites.html","integraissomatoriosprodutorioselimites.html","integraissomatoriosprodutorioselimites.html",
+        "integraissomatoriosprodutorioselimites.html","integraissomatoriosprodutorioselimites.html","integraissomatoriosprodutorioselimites.html",
+        "integraissomatoriosprodutorioselimites.html","superscriptsesubscripts.html","matrizes.html","chavetas.html","chavetas.html"];
+        var navLink = document.getElementById("navLink");
+
+        var parsedCookie = parseInt(document.cookie.split(";")[0].split("=")[1],32).toString(2).split("");
+        // parsing dos unlockables para um array de variaveis logicas
+        var arrayBools = [];
+        for(var i = 0; i < 15 - parsedCookie.length;i++){arrayBools.push("0")}
+        parsedCookie.forEach((i)=>{arrayBools.push(i)});
+        var changedFlag = false;
+        for(i = 0; i < arrayBools.length; i++){
+            if(arrayBools[i] == "0"){
+                changedFlag = true;
+                navLink.href = "../Matematica/" + paginas[i];
+                break;
+            }
+        }
+        if(!changedFlag){navLink.innerText = "Parabéns, Tudo Desbloqueado!"; navLink.style = "font-size: 6pt"}
+
+        }
+        function unlock(ints) {
+
+            var parsedCookie = parseInt(document.cookie.split(";")[0].split("=")[1],32).toString(2).split("");
+
+            var arrayBools = [];
+            for(var i = 0; i < 15 - parsedCookie.length;i++){arrayBools.push("0")}
+            parsedCookie.forEach((i)=>{arrayBools.push(i)});
+            ints.forEach((i)=> {
+                arrayBools[i] = 1;
+            })
+            newCookie = parseInt(arrayBools.join(""),2).toString(32)
+
+            var data = new Date()
+            data.setMonth(data.getMonth()+12)
+            document.cookie = 'num='+newCookie+';expires=' + data + ';Path=/;'
+            ints.forEach((i)=>{console.log("unlocked "+i)})
+            f5pag();
+        }
+        f5pag();
+        //loadIcon, snipet de https://stackoverflow.com/questions/260857/changing-website-favicon-dynamically
+        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+        link.type = 'image/png';
+        link.rel = 'shortcut icon';
+        link.href = '../assets/logoSite.png';
+        document.getElementsByTagName('head')[0].appendChild(link);
+        console.log("icon")
+    </script>
+</section>

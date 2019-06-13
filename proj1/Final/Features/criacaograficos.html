@@ -1,0 +1,127 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<h1>Criação de gráficos</h1>
+        <p>O ambiente ~\LaTeX~ ,oferece a possibilidade de criar gráficos na própria linguagem sem necessidade de incluir imagens externas de outros sites por exemplo Geogebra ou Desmos.</p>
+            <p>Para iniciar um ambiente de gráfico ortonormado de coordenadas entre x e y insere-se o comando "\<span></span>begin{picture}(x,y) ... \end{picture}". Para que o gráfico seja visível em unidades predefinidas pode utilizar-se o comando "\setlength{\unitlength}{tamanho}" com por exemplo 5cm. Por fim o comando para desenhar um linha é definido pelo vetor origem, o vetor direção e o tamanho da linha. O comando para instanciar a linha é "\put(VetorOrigem){\line(VetorDireção){tamanhoDaLinha}}". Exemplificando a composição dos comandos descritos:</p>
+        <center>
+            <img src="../assets/page1.png"> <!Imagens neste Capitulo exemplificam os graficos feitos em LaTeX pois o codigo js de conversão de LaTeX para HTML não funciona neste caso>
+        </center>
+        <p>Gerado com o código:</p>
+        <pre>
+            \begin{center}
+            
+            \setlength{\unitlength}{5cm}
+            \begin{picture}(1,1)
+            \put(0,0){\line(0,1){1}}
+            \put(1,0){\line(-1,0){1}}
+            \put(0,1){\line(1,0){1}}
+            \put(1,1){\line(0,-1){1}}
+            \end{picture}
+            
+            \end{center}</pre>
+        <p>Esta é a forma mais simples de criação de gráficos em ~\LaTeX~ , e tem as suas variações por exemplo com o comando "\vector" em vez do "\line", que vai criar uma variação com setas em vez de linhas:</p>
+        <center>
+            <img src="../assets/page1img2.png">
+        </center>
+        <p>Gerado com o código: </p>
+        <pre>
+        \begin{center}
+        <br>
+        \setlength{\unitlength}{5cm}
+        \begin{picture}(1,1)
+        \put(0,0){\vector(0,1){1}}
+        \put(1,0){\vector(-1,0){1}}
+        \put(0,1){\vector(1,0){1}}
+        \put(1,1){\vector(0,-1){1}}
+        \end{picture}
+        <br>
+        \end{center}</pre>
+        <p>Podem criar-se circunferências com o comando "\circle{raio}" e círculos com o comando "\circle*{raio}":</p>
+        <center>
+            <img src="../assets/page2.png">
+        </center>
+        <p> Gerado com o código:</p>
+        <pre>
+        \begin{center}
+        \setlength{\unitlength}{5mm}
+        \begin{picture}(10,10)
+        %desenhar quadrado
+        \put(0,0){\line(0,10){10}}
+        \put(10,0){\line(-10,0){10}}
+        \put(0,10){\line(10,0){10}}
+        \put(10,10){\line(0,-10){10}}
+        %desenhar Círculos
+        \put(5,5){\circle{10}}
+        \put(5,5){\circle*{1}}
+        
+        \end{picture}
+        \end{center}</pre>
+        <p>É possível também escrever textos nos gráficos gerados, assim, por exemplo um triângulo pode ter vértices nomeados. O comando para tal efeito é "\put(Origem){$texto$}". Exemplificando:</p>
+        <center>
+            <img src="../assets/page3.png">
+        </center>
+        <p>Gerado com o código:</p>
+        <pre>
+        \begin{center}
+        \setlength{\unitlength}{5mm}
+        \begin{picture}(10,10)
+        %desenhar quadrado
+        \put(0,0){\line(0,10){10}}
+        \put(10,0){\line(-10,0){10}}
+        \put(0,10){\line(10,0){10}}
+        \put(10,10){\line(0,-10){10}}
+        %desenhar triângulo
+        \put(3,3){\line(1,0){3}}
+        \put(6,3){\line(0,1){4}}
+        \put(6,7){\line(-3,-4){3}}
+        %Letras Vértices
+        \put(2.5,2.5){$A$}
+        \put(6,2.5){$B$}
+        \put(6,7){$C$}
+        \end{picture}
+
+        \end{center}
+        </pre>
+        <p>Para além destas existe também a funcionalidade de escrever arrays de objetos como linhas ou círculos com o comando "\multiput(x,y)(~\Delta~ x,~\Delta~ y)<br>{n}{objeto}. Por exemplo:</p>
+        <center>
+            <img src="../assets/page4.png">
+        </center>
+        <p>Gerado com o código:</p>
+        <pre>
+        \begin{center}
+
+        \setlength{\unitlength}{5mm}
+        \begin{picture}(10,10)
+
+        %desenhar quadrado
+        \put(0,0){\line(0,10){10}}
+        \put(10,0){\line(-10,0){10}}
+        \put(0,10){\line(10,0){10}}
+        \put(10,10){\line(0,-10){10}}
+        %Desenhar Array de Vetores
+        \multiput(1,5)(2,0){5}{\vector(0,-1){5}}
+        %Desenhar Array de Círculos
+        \multiput(1,5)(2,0){5}{\circle{2}}
+        \end{picture}
+        
+        \end{center}
+        </pre>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

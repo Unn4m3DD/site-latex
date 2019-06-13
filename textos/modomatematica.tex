@@ -1,0 +1,214 @@
+
+
+O modo de matemática permite escrever símbolos e fórmulas de matemática de forma explícita e não ambígua que após compilados se assemelham extremamente a forma escrita dos mesmos
+
+\subsection{Como utilizar o Modo de Matemática}
+Existem dois modos de escrever matemática em \LaTeX , um é o \ac{ilmm} que é iniciado terminado por um único cifrão, "\$", e que vai escrever a fórmula na linha onde é escrita reduzindo a formatação de texto para que encaixe na linha, o outro é o \ac{nlmm} que inicía e termina com um cifrão duplo "\$\$" e vai criar a fórmula centrada numa nova linha com toda a formatação possível. Pode ainda usar-se o comando "\textbackslash begin\{equation\} ... \textbackslash end\{equation\}", este comando será discutido na \autoref{subchap.indexmat}.
+
+Por exemplo no \ac{ilmm} "\textbackslash int\textbackslash limits\_\{a\}\textasciicircum\{b\} f(x)" apareceria da seguinte forma: "$\int \limits_{a}^{b} f(x)$"\\ enquanto que no \ac{nlmm} seria:
+$$\int \limits_{a}^{b} f(x)$$
+
+Existe ainda uma forma de utilizar o \ac{ilmm} com a formatação completa, o comando "\textbackslash displaystyle\{\}", o que por vezes pode criar grandes espaçamentos entre linhas.
+Por exemplo o comando "\textbackslash displaystyle\{\textbackslash int\textbackslash\,limits\_\{a\}\textasciicircum\{b\}\,f(x)\,\}" \ \mbox{tornar-se-ia} "$\displaystyle{\int \limits_{a}^{b} f(x)}$"
+
+\subsection{Comandos mais comuns em \LaTeX}
+Alguns dos comandos mais comuns do modo de matemática do \LaTeX são
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{| c | c | c | }
+    \hline
+    Código                   & \ac{ilmm}          & displaystyle \ac{ilmm}         \\ \hline
+    \textbackslash sqrt\{x\} & $\sqrt{x}$         & $\displaystyle{\sqrt{x}}$     \\ \hline
+    x\textasciicircum p      & $x^{p}$            & $\displaystyle{x^{p}}$      \\ \hline
+    x\_ b                       & $x_{b}$            & $\displaystyle{x_b}$           \\ \hline
+    x\textasciicircum p\_ b  & $x_b^{p}$        & $\displaystyle{x_b^{p}}$      \\ \hline
+    \textbackslash pi          & $\pi$             & $\displaystyle{\pi}$          \\ \hline
+    \textbackslash otimes    & $\otimes$         & $\displaystyle{\otimes}$     \\ \hline
+    \textbackslash cup       & $\cap$             & $\displaystyle{\cap}$          \\ \hline
+    \textbackslash subset    & $\subset$         & $\displaystyle{\subset}$     \\ \hline
+    \textbackslash sum       & $\sum$             & $\displaystyle{\sum}$          \\ \hline
+    \hline
+\end{tabular}
+\end{table}
+
+\subsection{Caracteres do Modo Matemática}
+Em matemática regularmente é necessária a introdução de alguns caracteres diferentes dos \ac{ascii} que temos no teclado. Geralmente estes são letras gregas que podem ser obtidas pelo seu nome em inglês, no geral, pelo comando "\textbackslash nome" para letras minúsculas e pelo comando "\textbackslash Nome" para letras maiúsculas.
+
+Exemplificando:
+\begin{table}[h]
+\center
+\begin{tabular}{|c|c|}
+\hline
+Código & Output \\ \hline
+\textbackslash phi    & $\phi$ \\ \hline
+\textbackslash Phi    & $\Phi$ \\ \hline
+\textbackslash delta & $\delta$ \\ \hline
+\textbackslash Delta & $\Delta$ \\ \hline
+\end{tabular}
+\end{table}
+
+Podem também introduzir-se caracteres como infinito e "tender para" com os comandos "\textbackslash infty" ($\infty$) e "\textbackslash to" ($\to$).
+
+Em matemática uma forma comum de representar somatórios é com uma soma incluindo 3 pontinhos no meio da fórmula:
+$$\sum_{i = 0}^{n} i = 1 + 2 + 3 + \dots + n$$
+Estes 3 pontinhos podem ser obtidos com o comando "\textbackslash dots". Variantes deste símbolo com pontos na vertical e diagonal para matrizes por exemplo conseguem-se com as variações "\textbackslash vdots" \, $\vdots$ \,, "\textbackslash ddtos" \,$\ddots$\, e "\textbackslash reflectbox\{\$\textbackslash ddots\$\}"\, \reflectbox{$\ddots$}\\
+
+Podem representar-se desigualdades como o comando "\textbackslash tipo"\, seja o tipo as iniciais da desigualdade em inglês:
+\begin{table}[h]
+\center
+\begin{tabular}{|c|c|c|}
+
+\hline
+Código & Output & Nome Em Inglês \\ \hline
+\textbackslash ne & $\ne$ & Not Equal \\ \hline
+\textbackslash leq & $\leq$ & Lesser or EQual \\ \hline
+\textbackslash geq & $\geq$ & Greater or EQual \\ \hline
+\textbackslash equiv & $\equiv$ & EQUIValent \\ \hline
+
+\end{tabular}
+\end{table}
+
+Outros caracteres que podem ser necessários entram na categoria de caracteres compostos, por exemplo o $\pi$ maiúsculo, normalmente usado na matemática como produtório. Este tipo de caracteres será discutido na \autoref{subchap.integrais}.
+
+\subsection{Frações}
+Para introduzir frações é utilizado o comando "\textbackslash frac\{numerador\}{denominador}"\\
+
+$$\frac{numerador}{denominador}$$
+
+Em     \LaTeX podem fazer-se frações dentro de frações, aninhando (do inglês nest) comandos:
+
+$$\frac{a + \frac{b}{c}}{d}$$
+
+Com este tipo de comando deve ter-se especial cuidado com o \ac{ilmm} pois pode tornar-se ilegível, por exemplo em: "$\frac{\frac{\frac{a}{b}}{c}}{\frac{d}{\frac{e}{f}}}$"  \,, neste caso é aconselhada a utilização do "\textbackslash displaystyle\{\}" para cada fração: "$\displaystyle{\frac{\displaystyle{\frac{\displaystyle{\frac{a}{b}}}
+{c}}}{\displaystyle{\frac{d}{\displaystyle{\frac{e}{f}}}}}}$"\,ou o \ac{nlmm}. De notar que o comando com frações e displaystyles alinhados é extremamente confuso:
+\begin{verbatim}$\displaystyle{\frac{\displaystyle{\frac{\displaystyle{\frac{a}{b}
+}}{c}}}{\displaystyle{\frac{d}{\displaystyle{\frac{e}{f}}}}}}$.
+\end{verbatim}
+
+\subsection{SuperScripts e SubScripts}
+No modo de matemática do \LaTeX podem ser usados caracteres escritos como expoente ou base (superscript e subscript) utilizando os caracteres \textasciicircum \, e \_ respetivamente.
+Podem fazer-se combinações de ambos e incluir vários caracteres como expoente ou base. Um exemplo de utilização composta de tudo isto seria:
+$$log_e(e^{Exemplo Composto})$$
+Gerado com o código:
+\begin{verbatim}$$log_e(e^{Exemplo Composto})$$
+\end{verbatim}
+
+\subsection{Radicais}
+Em \LaTeX radicais são criados com a função "\textbackslash sqrt[índice]\{x\}".
+Por exemplo: $$ \sqrt[3i]{x^2+1}$$
+Gerado com o código:
+\begin{verbatim}$$ \sqrt[3i]{x^2+1}$$
+\end{verbatim}
+
+\subsection{Integrais, Somatórios, Produtórios e Limites}
+\label{subchap.integrais}
+O uso de integrais e somatórios em \LaTeX tem as suas particularidade e pode variar com de acordo com gosto pessoal. A forma mais simples de representar um integral, um somatório, um produtório e um limite é com os comandos "\textbackslash int"\,($\int$) , "\textbackslash sum"\,($\sum$), "\textbackslash prod"\,($\prod$) e "\textbackslash lim"\,($\lim$).
+
+Para além destas existem também as formas compostas com limites superiores e inferiores que podem ser representadas de duas formas, utilizando os já vistos superscript e subscript ou um novo comando chamado "\textbackslash limits \textasciicircum \_ ". O comando "\textbackslash displaystyle" também afeta a forma como é apresentada a fórmula. A única diferença entre os dois comandos é a forma de representação final.\\
+
+Ao utilizar os comandos de superscript e subscript temos:
+$${\int^b_a f(x) dx = \lim_{||\Delta x|| \to 0} \sum_{i=1}^{n} f(x_i^*)\Delta x_i}$$
+Gerado com o código:
+\begin{verbatim}$${\int^b_a f(x)dx=\lim_{||\Delta x||\to 0}\sum_{i=1}^{n}f(x_i^*)
+\Delta x_i}$$
+\end{verbatim}
+
+Com os comandos de limite temos:
+$${\int \limits^b_a f(x) dx = \lim \limits_{||\Delta x|| \to 0} \sum \limits_{i=1}^{n} f(x_i^*)\Delta x_i}$$
+Gerado com o código:
+\begin{verbatim}$${\int \limits^b_a f(x)dx=\lim \limits_{||\Delta x||\to 0}\sum
+\limits_{i=1}^{n}f(x_i^*)\Delta x_i}$$
+\end{verbatim}
+
+\subsection{Indexação de Equações}
+\label{subchap.indexmat}
+O modo de matemática do \LaTeX , munido da biblioteca \AmS -\LaTeX , oferece também a possibilidade de referência a equações através do comando "\textbackslash eqref\{ref\}". Para isso é necessário criar uma secção de texto com o comando "\textbackslash begin\{equation\} ... \textbackslash end\{equation\}":
+
+\begin{equation}
+    \sum_{i=1}^\infty \label{somatório}
+\end{equation}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{equation}
+    \sum_{i=1}^\infty \label{somatório}
+\end{equation}
+\end{verbatim}
+
+Pode referenciar-se a equação pelo seu label com o comando
+"\textbackslash eqref\{ somatório\}\,", aparecendo no documento final desta forma  \eqref{somatório}
+
+Para mudar a forma como a equação é numerada é possível utilizar o comando "\textbackslash tag{tag}" que substitui a numeração pelo conteúdo da tag como no exemplo:
+\begin{equation}
+    \sum_{i=1}^\infty \label{somatorio2} \tag{somatorio}
+\end{equation}
+
+Gerado com o código:
+\begin{verbatim}
+\begin{equation}
+    \sum_{i=1}^\infty \label{somatorio2} \tag{somatório}
+\end{equation}
+\end{verbatim}
+
+Será referenciado na mesma pelo comando "\textbackslash eqref\{ somatorio2\}\," desta forma \eqref{somatorio2}.
+É necessário ainda o cuidado com a ordem do label e da tag que têm de ser explicitamente label $\to$ tag.
+
+\subsection{Matrizes}
+Para representar matrizes em \LaTeX utiliza-se o comando "\textbackslash [ \textbackslash begin\{bmatrix\} ... \textbackslash end\{bmatrix\} \textbackslash ]" e uma estrutura bastante semelhante às listas:
+
+\[
+\begin{bmatrix}
+a & b & c \\
+d & \ddots & \vdots \\
+e & \dots & f \\
+\end{bmatrix}
+\]
+
+Gerado com o código:
+\begin{verbatim}
+\[
+\begin{bmatrix}
+a & b & c \\
+d & \ddots & \vdots \\
+e & \dots & f \\
+\end{bmatrix}
+\]
+\end{verbatim}
+
+\subsection{Chavetas}
+Em \LaTeX existem vários tipos de chavetas, a mais simples é a chaveta utilizada para representar sistemas de equações com o comando "\textbackslash begin\{cases\} ... \textbackslash end\{cases\}":
+
+
+$$
+f(x) = \begin{cases}
+1 & \text{ , se } x < 2 \\
+b & \text{ , se } x \le 2 \\
+\end{cases}
+$$
+\\
+Gerado com o código:
+\begin{verbatim}
+$
+f(x) = \begin{cases}
+1 & \text{ , se } x < 2 \\
+b & \text{ , se } x \le 2 \\
+\end{cases}
+$
+\end{verbatim}
+
+Podem ainda usar-se chavetas em cima e em baixo de equações com os comandos "\textbackslash underbrace" e "\textbackslash overbrace":
+
+$$ \overbrace{a+a}^{2a} + \underbrace{b+b}_{2b} = 2a + 2b$$
+
+Gerado com o código:
+\begin{verbatim}
+$$ \overbrace{a+a}^{2a} + \underbrace{b+b}_{2b} = 2a + 2b$$
+\end{verbatim}
+
+
+
+
+
+
+

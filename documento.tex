@@ -1,0 +1,69 @@
+\documentclass{report}
+
+\input{estrutura/import}
+
+\begin{document}
+
+\input{estrutura/definicoes}
+
+%\begin{Capa}
+\begin{titlepage}
+\begin{center} 
+\vspace*{50mm}{\Huge \titulo}\\ 
+\vspace{15mm}{\LARGE \autores}\\ 
+\vspace{30mm} \begin{figure}[h] \center \includegraphics{\logotipo} \end{figure}
+\vspace{30mm}
+\end{center}
+\begin{flushright} \versao \end{flushright} 
+\end{titlepage}
+%%Pagina 2
+\title{{\Huge\textbf{\titulo}}\\}\author{\autores \\ \autorescontactos}
+\date{\data} \maketitle \pagenumbering{roman}
+%\end{Capa}
+
+\renewcommand{\abstractname}{Resumo}
+\begin{abstract}
+\input{textos/resumo.tex}
+\end{abstract}
+
+
+%\begin{Indice}
+\tableofcontents 
+% \listoftables     % descomentar se necessário
+% \listoffigures    % descomentar se necessário
+\clearpage
+\pagenumbering{arabic}
+%\end{Indice}
+
+\chapter{Introdução}
+\label{chap.introducao}
+\input{textos/introducao.tex}
+
+\chapter{Itrodução à estrutura \LaTeX}
+
+\section{Filosofia}
+\label{chap.filosofia}
+\input{textos/filosofia.tex}
+
+\section{Estrutura de Comandos}
+\label{chap.estruturadecomandos}
+\input{textos/estruturadecomandos.tex}
+
+\chapter{Aprofundamento da linguagem}
+\input{textGenScripts/chapter.tex}
+
+
+\chapter*{Contribuições dos autores}
+O documento tem 2 autores e como tal, as contribuições de cada um. O autor \ac{ap} foi responsável pela estruturação do documento e toda a pesquisa e escrita relativa ao resumo e aos capítulos 1.1, 1.2 e 3.4 até 3.9 incluindo o capítulo \autoref{chap.modomatematica}. O coautor do documento \ac{ab} esteve a cargo dos restantes capítulos, 2.1 a 3.4.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Acrónimos}
+\begin{acronym}
+\input{textos/acronimos.tex}
+\end{acronym}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography
+
+\end{document}

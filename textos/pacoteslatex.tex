@@ -1,0 +1,15 @@
+O \LaTeX define um conjunto básico de macros para edição de textos. Caso o utilizador queria usar alguma função mais complexa, o \LaTeX permite que ele inclua arquivos com novos macros. Esses arquivos são chamados de pacotes. Existem pacotes para escrever a cor , para incluir figuras , etc ...
+O utilizador pode ainda até criar o seu próprio pacote. 
+
+\begin{verbatim}
+Para incluir um pacote basta usar :
+\usepackage[opção]{nome do pacote}
+\end{verbatim}
+
+Alguns pacotes podem ser incluídos usando opções diferentes . A opção deve ser inserida entre parêntesis retos antes do nome do pacote.Neste exemplo :
+
+\begin{verbatim}
+\usepackage[portuguese]{babel}
+\end{verbatim}
+
+o pacote babel define macros para edição de textos em diversas línguas . Como queríamos escrever em Português pusemos a opção portuguese. As distribuições do \LaTeX costumam vir com um conjunto amplo de pacotes. Outros pacotes podem ser instalados da mesma forma.

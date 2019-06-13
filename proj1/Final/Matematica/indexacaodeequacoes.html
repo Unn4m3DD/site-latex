@@ -1,0 +1,69 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+		<h1>Indexação de Equações</h1>
+
+		<p>O modo de matemática do ~\LaTeX~ , munido da biblioteca AmS-~\LaTeX~ , oferece também a possibilidade
+			de referência a equações através do comando "\<span></span>eqref{ref}". Para isso é necessário criar uma
+			secção de texto com o comando
+			"\begin<span></span>{equation} ... \end{equation}":</p>
+
+		\begin{equation}
+		\sum_{i=1}^\infty \label{somatorio} \tag{1.1}
+		\end{equation}
+
+		<p>Gerado com o código: <br>
+			\begin<span></span>{equation}<br>
+			\sum_{i=1}^\infty \label{somatorio}<br>
+			\end{equation}</p>
+
+		<p>Pode referenciar-se a equação pelo seu label com o comando
+			"\<span></span>eqref{somatorio}", aparecendo no documento final desta forma \eqref{somatorio}</p>
+
+		<p>Para mudar a forma como a equação é numerada é possível utilizar o comando "\tag{tag}"
+			que substitui a numeração pelo conteúdo da tag como no exemplo:</p>
+		\begin{equation}
+		\sum_{i=1}^\infty \label{somatorio2} \tag{somatorio}
+		\end{equation}
+
+		<p>Gerado com o código: <br>
+			\<span></span>begin{equation}<br>
+			\sum_{i=1}^\infty \label{somatorio2} \tag{somatório}<br>
+			\end{equation}
+		</p>
+
+		<p>Será referenciado na mesma pelo comando "\<span></span>eqref{somatorio2}" desta forma \eqref{somatorio2}.
+			É necessário ainda o cuidado com a ordem do label e da tag que têm de ser explicitamente label ~\to~	tag.</p>
+
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+            function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "\\begin{equation}\n\\sum_{i=1}^\\infty \\label{somatorioTeste} \\tag{somatorioTeste}\n" +
+                    "\\end{equation} \n\\eqref{somatorioTeste}";
+                innerDoc.getElementById("orig").innerText = "\\begin{equation}\n\\sum_{i=1}^\\infty \\label{somatorioTeste} \\tag{somatorioTeste}\n" +
+                    "\\end{equation} \n\\eqref{somatorioTeste}"
+            }
+		</script>
+
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

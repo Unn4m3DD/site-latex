@@ -1,0 +1,48 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<h1>
+            Referências a documentos externos
+        </h1>
+        <p>
+            Devido ao seu cariz principalmente académico, ~\LaTeX~ suporta a inclusão de referências a bibliografia, utilizando o comando de referência <br>"\cite{nome}" em conjunto com o comando de definição "@misc{nome, atributos}", como por exemplo:
+        </p>
+        <pre>
+            %comando de definição
+            @misc{tnssl,
+            author={{Tobias Oetiker}},
+            title={{The Not So Short Introduction to \LaTeX}},
+            month={Março},
+            year={2018},
+            note = "Online; acedido em Novembro de 2018]"
+            }
+
+            %comando de citação
+            \cite{tnssl}
+        </pre>
+        <p>
+            O resultado obtido com a citação é semelhante a este \cite{tnssl}<br>
+            <br>
+            Podemos incluir as definições num documento externo através do comando "\input{}" (<a href="projetoscomlatexcomandoinput.html">aprofundado aqui</a>)<br> mas o mais comum é criar um ficheiro com a extensão ".bib" e utilizar o comando "\bibliography{filename}" para referenciar que é um ficheiro de bibliografia.<br>
+            <br>
+            Utiliza-se o comando "\printbibliography" para indicar ao compilador onde deve ser escrita a bibliográfica caso referenciada.<br>
+
+        </p>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

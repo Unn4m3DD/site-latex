@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Uma breve abordagem ao LaTeX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="Template/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="Template/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="Template/assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="Template/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="Template/assets/css/flexslider.css" rel="stylesheet">
+  <link href="Template/assets/css/style.css" rel="stylesheet">
+  <link href="Template/assets/color/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" type="image/png" href="Final/assets/logoSite.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Template/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Template/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Template/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="Template/assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <!-- LaTeX compiler -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+    inlineMath: [['~','~']],
+    displayMath:[['~~','~~']]}
+  });
+  </script>
+  <!-- =======================================================
+    Theme Name: Lumia
+    Theme URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Navbar
+    ================================================== -->
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html"><h1>~\LaTeX~</h1></a>
+            </div>
+            <!-- end logo -->
+
+            <!-- top menu -->
+            <div class="navigation">
+              <nav>
+                <ul class="nav topnav">
+                  <li class="active">
+                    <a href="index.html"><i class="icon-home"></i> Home </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><i class="icon-search"></i> Features <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="Final/Features/pacoteslatex.html">Pacotes ~\LaTeX~</a></li>
+                      <li><a href="Final/Features/caracteresespeciais.html">Caracteres Especiais</a></li>
+                      <li><a href="Final/Features/inclusaodeimagens.html">Inclusão de Imagens</a></li>
+                      <li class="dropdown"><a href="#">Listas e Tabelas<i class="icon-angle-right"></i></a>
+                        <ul class="dropdown-menu sub-menu">
+                          <li><a href="Final/Matematica/listas.html">Listas</a></li>
+                          <li><a href="Final/Matematica/tabelas.html">Tabelas</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#">Modo de Matemática<i class="icon-angle-right"></i></a>
+                        <ul class="dropdown-menu sub-menu">
+                          <li><a href="Final/Matematica/comoutilizaromododematematica.html">Como Utilizar o Modo de Matemática</a></li>
+                          <li><a href="Final/Matematica/comandosmaiscomunsdomododematematica.html">Comandos mais Comuns do Modo de Matemática</a></li>
+                          <li><a href="Final/Matematica/caracteresespeciaisdomododematematica.html">Caracteres Especiais do Modo de Matemática</a></li>
+                          <li><a href="Final/Matematica/fracoes.html">Frações</a></li>
+                          <li><a href="Final/Matematica/superscriptsesubscripts.html">SuperScripts e SubScripts</a></li>
+                          <li><a href="Final/Matematica/radicais.html">Radicais</a></li>
+                          <li><a href="Final/Matematica/integraissomatoriosprodutorioselimites.html">Integrais, Somatórios, Produtórios e Limites</a></li>
+                          <li><a href="Final/Matematica/indexacaodeequacoes.html">Indexação de Equações</a></li>
+                          <li><a href="Final/Matematica/matrizes.html">Matrizes</a></li>
+                          <li><a href="Final/Matematica/chavetas.html">Chavetas</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="Final/Features/criacaograficos.html">Criação de Gráficos</a></li>
+                      <li><a href="Final/Features/projetoscomlatexcomandoinput.html">Projetos com ~\LaTeX~ utilizando o comando input</a></li>
+                      <li><a href="Final/Features/referenciasadocumentosexternos.html">Referências a Documentos Externos</a></li>
+                      <li><a href="Final/Features/fonteselinguagens.html">Fontes e Estilos de Texto</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                  <li><a href="Final/Outros/historia.html"> <i class="icon-book"></i> História</a></li>
+                  <li class="dropdown">
+                    <a href="#"><i class="icon-text-height"></i>Estrutura<i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu sub-menu">
+                      <li class="dropdown"><a href="#">Filosofia ~\LaTeX~<i class="icon-angle-right"></i></a>
+                        <ul class="dropdown-menu sub-menu">
+                          <li><a href="Final/Filosofia/pros.html">Prós</a></li>
+                          <li><a href="Final/Filosofia/contras.html">Contras</a></li>
+                          <li><a href="Final/Filosofia/wysiwym.html">WYSIWYM</a></li>
+                          <li><a href="Final/Filosofia/wysiwyg.html">WYSIWYG</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="Final/Features/estruturadecomandos.html">Estrutura de Comandos ~\LaTeX~</a>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="Final/Outros/about.html"><i class="icon-question-sign"></i>Sobre</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu -->
+
+          </div>
+        </div>
+      </div>
+      <section id="subintro">
+        <div class="container">
+          <div class="row">
+            <div class="span8">
+              <ul class="breadcrumb">
+                Podes a qualquer momento testar os conhecimentos sobre ~\LaTeX~ neste site,
+              </ul>
+            </div>
+            <div class="span4">
+              <div class="search" >
+                <a class="btn btn-inverse btn-rounded btn-large" href="Final/AmbienteTeste/AmbienteTeste.html" style="color: white; font-size: 15pt;text-decoration: none;">Experimenta!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section id="intro">
+
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <!-- Place somewhere in the <body> of your page -->
+            <div id="mainslider" class="flexslider">
+              <ul class="slides">
+                <li data-thumb="Final/assets/ImgLatex.png">
+                  <img src="Final/assets/ImgLatex.png" alt="<Imagem Relativa ao LaTeX>" />
+                  <div class="flex-caption primary">
+                    <h2><a href="Final/Filosofia/pros.html">Filosofia</a></h2>
+                    <p>Aprende sobre a filosofia intrinseca do ~\LaTeX~</p>
+                  </div>
+                </li>
+                <li data-thumb="Final/assets/ImgModoMatematica.png">
+                  <img src="Final/assets/ImgModoMatematica.png" alt="<Imagem Relativa ao Modo de Matemática>" />
+                  <div class="flex-caption warning">
+                    <h2><a href="Final/Matematica/comoutilizaromododematematica.html">Modo Matemática</a></h2>
+                    <p>Aprende sobre o modo de matemática ~\LaTeX~</p>
+                  </div>
+                </li>
+                <li data-thumb="Final/assets/ImgHistoria.gif">
+                  <img src="Final/assets/ImgHistoria.gif" alt="<GIF Relativo à Historia>" />
+                  <div class="flex-caption success">
+                    <h2><a href="Final/Outros/historia.html">História</a></h2>
+                    <p>Aprende sobre a história do ~\LaTeX~</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="maincontent">
+      <div class="container">
+
+        <div class="row">
+          <div class="span12">
+            <div class="call-action">
+
+              <div class="text">
+                <h2>Resumo</h2>
+                <p>
+                  Este site destina-se a explorar as funcionalidades da linguagem ~\LaTeX~. Desde indexação de texto, 
+                  inclusão de referências de um ficheiro externo, criação de tabelas, introdução de símbolos matemáticos e
+                  até mesmo criar gráfcos com pontos, vetores e arrays destes. É um documento que foca na utilização prática 
+                  da tecnologia e que visa introduzir pessoas novas à mesma. Apesar de já existirem manuais de extrema qualidade
+                  como <a target="_blank" href="https://tobi.oetiker.ch/lshort/lshort.pdf">este</a> ou <a href="https://elearning.ua.pt/pluginfile.php/165579/mod_resource/content/10/guide-3-latex.pdf">este</a>, geralmente pecam por se tornarem
+                  listas quase exaustivas de comandos enquanto o objetivo deste documento é dar a conhecer a linguagem e
+                  dar sujestões de utilização como <a href="Final/Features/projetoscomlatexcomandoinput.html">aqui</a> onde que é explorada a
+                  potencialidade do comando "\input". Este documento não se propõe de forma alguma a substituir o manual de  <a target="_blank" href="https://www.amazon.com/LaTeX-Document-Preparation-System-2nd/dp/0201529831">~\LaTeX~</a>
+                  , é apenas um guião simples para iniciantes na linguagem e na forma de escrever textos, uma vez que a grande maioria
+                  conhece e utiliza ferramentas como Microsoft Word que utiliza o paradigma What You See Is What You Mean (<a href="Final/Filosofia/wysiwym.html">WYSIWYM</a>).
+                  O documento tem algum ênfase nas funções de matemática por se tratarem de funções que produzem texto mais elaborado
+                  e com mais variantes que podem confundir utilizadores que acabam de ingressar na linguagem. Para além desta a maioria
+                  das funções mais gerais de ~\LaTeX~ serão abordadas ainda que com menos detalhe.
+                </p>
+              </div>
+              <div class="cta">
+                <a class="btn btn-large btn-theme" href="Final/Outros/historia.html">
+							<i class="icon-book icon-white"></i> Começar! </a>
+              </div>
+
+            </div>
+            <!-- end tagline -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span3 features e_pulse">
+            <br><h1 style="margin-bottom: 40px" align="center">\function[]{}</h1>
+            <div class="box">
+              <div class="divcenter">
+                <a href="Final/Features/estruturadecomandos.html"><i class="icon-circled icon-48 icon-text-height e_pulse"></i></a>
+                <h3>Estrutura ~\LaTeX~</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="span3 features e_pulse">
+            <h1 align="center">~\sum \limits_a^b ~</h1>
+            <div class="box">
+              <div class="divcenter">
+                <a href="Final/Matematica/integraissomatoriosprodutorioselimites.html"><i class="icon-circled icon-48 icon-magic e_pulse "></i></a>
+                <h3>Caracteres Complexos</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="span3 features e_pulse">
+            <h1  style="margin-bottom: 17px; text-align: center">~\pi \,\,\,\,\,\,\,\,\, \phi~<br>~\Phi \,\,\,\,\,\,\,\, \Delta~</h1>
+            <div class="box">
+              <div class="divcenter">
+                <a href="Final/Matematica/caracteresespeciaisdomododematematica.html"><i class="icon-circled icon-48 icon-cogs e_pulse"></i></a>
+                <h3>Caracteres Especiais</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="span3 features e_pulse">
+            <br><h1 style="margin-bottom: 40px" align="center">?</h1>
+            <div class="box">
+              <div class="divcenter">
+                <a href="Final/Outros/about.html"><i class="icon-circled icon-48 icon-bullhorn e_pulse"></i></a>
+                <h3>Sobre <br> Nós</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Footer
+================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="widget">
+              <h5>Outros Sites Relacionados</h5>
+              <ul class="regular">
+                <li><a href="https://www.overleaf.com/">Overleaf<i class="icon-leaf"></i></a></li>
+                <li><a href="https://www.latex-project.org/">Site oficial do ~\LaTeX~</a></li>
+                <li><a href="https://www.mathjax.org/">Site da lib MathJax <i class="icon-plus"></i></a></li>
+                <li><a href="https://bootstrapmade.com/lumia-bootstrap-business-template/">Template deste Site (Lumia)</a></li>
+                <li><a href="https://www.flickr.com/photos/168718884@N04/45471090515/in/album-72157704806870434/">Flickr<i class="icon-arrow-right"></i></a></li>
+                <li><a href="https://leafletjs.com/">Site da lib Leaflet<i class="icon-map-marker"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5>Veja Imagens do Desenvolvimento do Site !!</h5>
+              <a data-flickr-embed="true" data-footer="false" data-context="true"  href="https://www.flickr.com/photos/168718884@N04/45471090515/in/album-72157704806870434/" title="img1"><img src="https://farm5.staticflickr.com/4907/45471090515_8dec18dbbf_n.jpg" width="360" height="140" alt="img1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5>Sobre Nós</h5>
+              <address style="margin-bottom: 10px">
+                <img src="Final/assets/ua.png" alt="<Logo UA>" height="30" width="30" style="margin-bottom: 4px"> <strong>Universidade de Aveiro</strong><br>
+                <a href="https://www.ua.pt">Universidade de Aveiro</a><br>
+                Campus Universitário de Santiago<br>
+                3810-193 Aveiro, Portugal
+              </address>
+              <p>
+                <i class="icon-envelope-alt"></i> andrepatacas@ua.pt<br>
+                <i class="icon-envelope"></i> afonsoboto@ua.pt
+              </p>
+            </div>
+            <div class="widget">
+              <ul class="social">
+                <li><a href="#" id="ttshow"  data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square icon-32"></i></a></li>
+                <!--este script vaí criar um evento que é chamado a cada 1000ms(1 segundo) que muda o link para o perfil de cada um dos criadores do twitter-->
+                <script>
+                    var links = ['https://mobile.twitter.com/evan_m_williams', 'https://mobile.twitter.com/biz', 'https://mobile.twitter.com/nhglass']
+                    var linkDisplay = document.getElementById("ttshow");
+                    setInterval(nextTwitterCreator,1000);
+                    var currentShown = 0;
+                    function nextTwitterCreator() {
+                        var nextShown = (currentShown + 1) % 3;
+                        linkDisplay.href = (links[nextShown])
+                        currentShown = nextShown;
+                    }
+                </script>
+                <li><a href="https://www.facebook.com/zuck" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square icon-32"></i></a></li>
+                <li><a href="https://pt.linkedin.com/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square icon-32"></i></a></li>
+                <li><a href="https://www.pinterest.pt/" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square icon-32"></i></a></li>
+                <li><a href="https://plus.google.com/discover" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square icon-32"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="verybottom">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <p>
+                &copy; Lumia - All right reserved
+              </p>
+            </div>
+            <div class="span6">
+              <div class="pull-right">
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Lumia
+                  -->
+                  Created by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+  <!-- end wrapper -->
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+  <script src="Template/assets/js/jquery.js"></script>
+  <script src="Template/assets/js/raphael-min.js"></script>
+  <script src="Template/assets/js/jquery.easing.1.3.js"></script>
+  <script src="Template/assets/js/bootstrap.js"></script>
+  <script src="Template/assets/js/google-code-prettify/prettify.js"></script>
+  <script src="Template/assets/js/jquery.elastislide.js"></script>
+  <script src="Template/assets/js/jquery.prettyPhoto.js"></script>
+  <script src="Template/assets/js/jquery.flexslider.js"></script>
+  <script src="Template/assets/js/jquery-hover-effect.js"></script>
+  <script src="Template/assets/js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="Template/assets/js/custom.js"></script>
+
+</body>
+</html>

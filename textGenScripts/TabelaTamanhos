@@ -1,0 +1,10 @@
+\textbackslash tiny\{tiny\}&\tiny{tiny}\\ \hline
+\textbackslash scriptsize\{scriptsize\}&\scriptsize{scriptsize}\\ \hline
+\textbackslash footnotesize\{footnotesize\}&\footnotesize{footnotesize}\\ \hline
+\textbackslash small\{small\}&\small{small}\\ \hline
+\textbackslash normalsize\{normalsize\}&\normalsize{normalsize}\\ \hline
+\textbackslash large\{large\}&\large{large}\\ \hline
+\textbackslash Large\{Large\}&\Large{Large}\\ \hline
+\textbackslash LARGE\{LARGE\}&\LARGE{LARGE}\\ \hline
+\textbackslash huge\{huge\}&\huge{huge}\\ \hline
+\textbackslash Huge\{Huge\}&\Huge{Huge}\\ \hline

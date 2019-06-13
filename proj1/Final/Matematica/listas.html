@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="importsInit"></div>
+<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+<body>
+<div id="wrapper">
+	<header id="navBar">
+		<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+	</header>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+<p>Existem dois tipos de listas em ~\LaTeX~, listas ordenadas e não ordenadas. Para criação de listas não
+	ordenadas
+	utiliza-se o comando "\<span></span>begin{itemize} ... \end{itemize}" juntamente com o comando "\item":</p>
+<ul >
+	<li>Item0</li>
+	<li>Item1</li>
+	<li>Item2</li>
+</ul>
+
+<p>Gerado com o código:<br>
+	\begin<span></span>{itemize}<br>
+	\item item0<br>
+	\item item1<br>
+	\item item2<br>
+	\end{itemize}</p>
+
+<p>Para criação de listas ordenadas utiliza-se o comando "\begin<span></span>{enumerate} ... \end{enumerate}" juntamente com
+	o comando "\item":</p>
+<ol >
+	<li>Item0</li>
+	<li>Item1</li>
+	<li>Item2</li>
+</ol>
+
+<p>Gerado com o código:<br>
+	\begin<span></span>{enumerate}<br>
+	\item item0<br>
+	\item item1<br>
+	\item item2<br>
+	\end{enumerate}</p>
+
+<p>Podem criar-se tabelas aninhadas que, caso numeradas, criam numeração automatica das tabelas internas com um
+	simbolo diferente:</p>
+
+<ol>
+	<li>item0</li>
+	<li><ol>
+		<li>item00</li>
+		<li>item01</li>
+		<li>
+			<ol>
+				<li>item010</li>
+				<li>item111</li>
+				<li>item112</li>
+			</ol>
+		</li>
+		<li>item02</li>
+	</ol>
+	</li>
+	<li>
+		<ul>
+			<li>item020</li>
+			<li>item121</li>
+			<li>item222</li>
+		</ul></li>
+</ol>
+<p>Este resultado difere um pouco do obtido atravez do ~\LaTeX~ pois foi uma tentativa de replicação com HTML já que a biblioteca MathJax não
+suporta as listas ~\LaTeX~. Algo semelhante seria gerado pelo codigo:
+</p>
+<p>
+	\begin<span></span>{enumerate}<br>
+	\item item0<br>
+	\begin<span></span>{enumerate}<br>
+	\item item00<br>
+	\item item01<br>
+	\begin<span></span>{enumerate}<br>
+	\item item010<br>
+	\item item111<br>
+	\item item212<br>
+	\end{enumerate}<br>
+	\item item02<br>
+	\begin<span></span>{itemize}<br>
+	\item item020<br>
+	\item item121<br>
+	\item item222<br>
+	\end{itemize}<br>
+	\end{enumerate}<br>
+	\item item2<br>
+	\end{enumerate}</p>
+<div id="footer"></div>
+<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+</body>
+</html>
+	

@@ -1,0 +1,111 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+
+			<h1>Sobre:</h1>
+			<p>Este site foi produzido por André Patacas e Afonso Bôto, foi iniciada a produção no dia 11 de Dezembro de 2018 e finalizada em
+				15 de Janeiro de 2019 como está documentado no projeto
+			<a href="http://code.ua.pt/projects/labi2018-ap1-g1" target="_blank">http://code.ua.pt/projects/labi2018-ap1-g1</a> do
+				<a href="http://code.ua.pt" target="_blank">Code.UA</a> <br>
+				A contribuição para o trabalho foi repartida entre os 2 autores, sendo:<br>
+				A escolha do template, o codigo javascript, a navbar, o footer, o perfil no flickr, as páginas Home,
+				Listas(conteúdo) e Tabelas, Modo de Matemática(e subpáginas relativas ao mesmo), (Criação de Gráficos, Comando Input, Referências, Fontes) - conteúdo, Sobre e
+				o Ambiente de testes e a pagina utilizada como iframe Consola de testes, contribuição de André Patacas<br>
+				As páginas História, Estrutura, (Listas ,Criação de Gráficos, Comando Input, Referências e Fontes)  para hmtl, e restantes features contribuição de Afonso Bôto.<br>
+
+			Foram utilizadas diversas bibliotecas externas: <br>
+
+			</p>
+			<ul>
+				<li>Template de animações javascript e estilos css do site: Lumia. É um template que pode ser utilizado desde que a respetiva
+					referência no footer seja mantida e pode ser consultado <a href="https://bootstrapmade.com/lumia-bootstrap-business-template/">aqui</a></li>
+				<li>Conversor de codigo ~\LaTeX~, mais especificamente conteúdos de matemática, em estilos css interpretaveis pelo browser:
+					MathJax. A sua utilização é gratuita e pode ser consultado o site oficial <a href="https://bootstrapmade.com/lumia-bootstrap-business-template/">aqui</a>
+				</li>
+				<li>Gestor de mapas: Leaflet. Utilização gratuita, projeto open-source que pode ser consultado <a
+						href="https://leafletjs.com/">aqui</a></li>
+				<li>Import dinamico de imagens: Flickr. Flickr é uma rede social que é utilizada regularmente para partilhar fotos devido ao seu armazenamento
+					e a facilidade de trabalhar com a biblioteca respetiva. Pode ser consultada a utilização da biblioteca
+					<a href="https://help.flickr.com/en_us/share-or-embed-flickr-photos-or-albums-rJBx6mjyX">aqui</a>
+				</li>
+			</ul>
+			<p>Foram consultados alguns documentos e sites para a realização do trabalho:</p>
+			<ul>
+				<li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf">The Not So Short Introduction to ~\LaTeX~</a></li>
+				<li><a href="https://elearning.ua.pt/pluginfile.php/165579/mod_resource/content/10/guide-3-latex.pdf">Produção de documentos com ~\LaTeX~</a></li>
+				<li><a href="https://www.passeidireto.com/arquivo/29116461/introducao-ao-latex---reginaldo-santos/10">Introdução ao ~\LaTeX~</a></li>
+				<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+			</ul>
+
+			<h2>Onde podemos ser encontrados:</h2>
+			<div id="oMeuMapa" style="margin: 3%;width: 94%; height: 400px"></div>
+			<script type="text/javascript">
+                var map = new L.Map("oMeuMapa", {center: [40.633258,-8.659097],zoom: 15});
+
+                var osmUrl="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+                var osmAttrib="Universidade de Aveiro";
+                var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib});
+                map.addLayer(osm);
+                var ua = L.polygon([
+                [40.6287678993627, -8.655552864074709],
+                [40.6284096244106, -8.65628242492676],
+                [40.6285073359518, -8.65701198577881],
+                [40.632285405903296, -8.661646842956545],
+                [40.637463620001135, -8.658642768859865],
+                [40.63570502628747, -8.6557674407959],
+                [40.63423949614013, -8.656497001647951],
+                [40.63293677566988, -8.655810356140138],
+                [40.63169916768049, -8.656969070434572],
+                [40.63020097994973, -8.654994964599611],
+                [40.62938673338897, -8.65478038787842],],{color: "blue"}
+                );
+                ua.addTo(map);
+                var icon1 = L.icon({iconUrl: "../assets/uab.png",iconSize: [40,40]});
+                L.marker([40.633258, -8.659097],{icon: icon1}).bindPopup("Universidade de Aveiro").addTo(map);
+                //map.on("click", mostraCoordenadas);
+                //function mostraCoordenadas(e){
+                //    var s = document.getElementById("coordenadas");			//este codigo foi feito para facilitar a demarcação da area azul
+                //    s.innerHTML += e.latlng.lat+", "+e.latlng.lng + "<br>";
+                //}
+				//Codigo algo inspirado no guião de labi sobre componentes javascript, foi consultada a documentção por exemplo para a fonte locar
+				//do icone e o seu tamanho..
+
+			</script>
+			<!--<p id="coordenadas"></p> este codigo foi feito para facilitar a demarcação da area azul-->
+
+			<h2>Debug:</h2>
+			<ul>
+				<li style="margin: 5px"><a class="btn btn-info" onclick="
+                var data = new Date()
+                data.setMonth(data.getMonth()+12)
+                document.cookie = 'num=0;expires=' + data + ';Path=/;'
+  				window.location.href = '../AmbienteTeste/AmbienteTeste.html';
+				">Clique aqui para resetar os debloqueaveis da pagina "Experimente!"</a></li>
+				<li style="margin: 5px"><a class="btn btn-info" onclick="
+                var data = new Date()
+                data.setMonth(data.getMonth()+12)
+                document.cookie = 'num='+parseInt('1111111111111111' ,2).toString(32)+';expires=' + data + ';Path=/;'
+  				window.location.href = '../AmbienteTeste/AmbienteTeste.html';
+				" href="../AmbienteTeste/AmbienteTeste.html">Clique aqui para ativar os debloqueaveis da pagina
+					"Experimente!"</a></li>
+			</ul>
+			<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		</div>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+
+	</body>
+	</html>
+	

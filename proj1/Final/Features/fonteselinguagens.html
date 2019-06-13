@@ -1,0 +1,46 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<h1>Fontes e Liguagens</h1>
+        <p>O ~\LaTeX~ oferece a possibilidade de alterar o <span style="font-size: 20px; font-family: Verdana,sans-serif;">tamanho</span> e o <b style="color: red"> estilo </b>. Infelizmente não é possível utilizar fontes externas nativamente no ~\LaTeX~ para tal efeito recomenda-se a utilização de Xe~\LaTeX~.</p>
+        
+        <table style="margin: auto" align="middle" border="1">
+            <tr><td><b>Código</b></td> <td><b>Resultado</b></td></tr>
+            <tr><td>\textrm{textrm}</td> <td>~\textrm{textrm}~</td></tr>
+            <tr><td>\textsf{textsf}</td> <td>~\textsf{textsf}~</td></tr>
+            <tr><td>\texttt{texttt}</td> <td>~\texttt{texttt}~</td></tr>
+            <tr><td>\textbf{textbf}</td> <td>~\textbf{textbf}~</td></tr>
+            <tr><td>\textit{textit}</td> <td>~\textit{textit}~</td></tr>
+            <tr><td>\textnormal{textnormal}</td> <td>textnormal</td></tr>
+        </table>
+        <br>
+        <table style="margin: auto" align="middle" border="1">
+            <tr><td><b>Código</b></td> <td><b>Resultado</b></td></tr>
+            <tr><td>\tiny{tiny}</td> <td>~\tiny{tiny}~</td></tr>
+            <tr><td>\scriptsize{scriptsize}</td> <td>~\scriptsize{scriptsize}~</td></tr>
+            <tr><td>\small{small}</td> <td>~\small{small}~</td></tr>
+            <tr><td>\normalsize{normalsize}</td> <td>~\normalsize{normalsize}~</td></tr>
+            <tr><td>\large{large}</td> <td>~\large{large}~</td></tr>
+            <tr><td>\Large{Large}</td> <td>~\Large{Large}~</td></tr>
+            <tr><td>\LARGE{LARGE}</td> <td>~\LARGE{LARGE}~</td></tr>
+            <tr><td>\huge{huge}</td> <td>~\huge{huge}~</td></tr>
+            <tr><td>\Huge{Huge}</td> <td>~\Huge{Huge}~</td></tr>
+        </table>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

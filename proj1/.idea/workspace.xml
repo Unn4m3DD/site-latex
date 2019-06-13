@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a902c23-cff6-40fc-94cd-13d07cd7d796" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/AmbienteTeste/AmbienteTeste.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/AmbienteTeste/AmbienteTeste.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/Features/caracteresespeciais.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/Features/caracteresespeciais.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/Includables/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/Includables/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/Includables/importsInit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/Includables/importsInit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/Includables/navBar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/Includables/navBar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final/Outros/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Final/Outros/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Final/Includables/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/Includables/importsInit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/Includables/navBar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="118" column="91" selection-start-line="118" selection-start-column="91" selection-end-line="118" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/Outros/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="46" column="117" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="117" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/AmbienteTeste/AmbienteTeste.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final/Matematica/caracteresespeciaisdomododematematica.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="286" column="25" lean-forward="true" selection-start-line="286" selection-start-column="25" selection-end-line="286" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#2;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#3;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#script#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>icon-envelope-alt</find>
+      <find>book</find>
+      <find>blo</find>
+      <find>sobre</find>
+      <find>~</find>
+      <find>textbackslash</find>
+      <find>$~</find>
+      <find>\{</find>
+      <find>\}</find>
+      <find>\LaTeX</find>
+      <find>$</find>
+      <find>../</find>
+      <find>img</find>
+      <find>�</find>
+      <find>th</find>
+      <find>console.lo</find>
+      <find>console</find>
+      <find>unlo</find>
+      <find>sho</find>
+      <find>historia</find>
+      <find>raf</find>
+      <find>resumo</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Andre Patacas\Desktop\GitTrabalhoLabi\labi2018-ap1-g1\proj1</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Final/AmbienteTeste.html" />
+        <option value="$PROJECT_DIR$/Final/Includables/imports.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/fracões.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/integrais,somatórios,produtórioselimites.html" />
+        <option value="$PROJECT_DIR$/Template/index.html" />
+        <option value="$PROJECT_DIR$/Final/Includables/importsEnd.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/listas.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/comandosmaiscomunsdomododematematica.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/comoutilizaromododematematica.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/tabelas.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/indexacaodeequacoes.html" />
+        <option value="$PROJECT_DIR$/Final/Filosofia/wysiwym.html" />
+        <option value="$PROJECT_DIR$/Final/Filosofia/wysiwyg.html" />
+        <option value="$PROJECT_DIR$/Final/Filosofia/contras.html" />
+        <option value="$PROJECT_DIR$/Final/Filosofia/pros.html" />
+        <option value="$PROJECT_DIR$/Final/Features/criacaograficos.html" />
+        <option value="$PROJECT_DIR$/Final/Features/estruturadecomandos.html" />
+        <option value="$PROJECT_DIR$/Final/Features/listasetabelas.html" />
+        <option value="$PROJECT_DIR$/Final/Features/modomatematica.html" />
+        <option value="$PROJECT_DIR$/Final/Features/pacoteslatex.html" />
+        <option value="$PROJECT_DIR$/Final/Features/projetoscomlatexcomandoinput.html" />
+        <option value="$PROJECT_DIR$/Final/Features/referenciasadocumentosexternos.html" />
+        <option value="$PROJECT_DIR$/Template/portfolio-2cols.html" />
+        <option value="$PROJECT_DIR$/Testes/ConsolaDeTesteLatex.html" />
+        <option value="$PROJECT_DIR$/Final/Features/fonteselinguagens.html" />
+        <option value="$PROJECT_DIR$/Final/Features/inclusaodeimagens.html" />
+        <option value="$PROJECT_DIR$/Final/Outros/historia.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/caracteresespeciaisdomododematematica.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/chavetas.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/fracoes.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/integraissomatoriosprodutorioselimites.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/matrizes.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/radicais.html" />
+        <option value="$PROJECT_DIR$/Final/Matematica/superscriptsesubscripts.html" />
+        <option value="$PROJECT_DIR$/Final/Features/caracteresespeciais.html" />
+        <option value="$PROJECT_DIR$/Final/Includables/importsInit.html" />
+        <option value="$PROJECT_DIR$/Final/AmbienteTeste/AmbienteTeste.html" />
+        <option value="$PROJECT_DIR$/Final/Includables/navBar.html" />
+        <option value="$PROJECT_DIR$/Final/Outros/about.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Final/Includables/footer.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="AmbienteTeste" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Filosofia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Includables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Matematica" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Final" type="462c0819:PsiDirectoryNode" />
+              <item name="Outros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proj1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj1" type="462c0819:PsiDirectoryNode" />
+              <item name="Testes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a902c23-cff6-40fc-94cd-13d07cd7d796" name="Default Changelist" comment="" />
+      <created>1544472160360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544472160360</updated>
+      <workItem from="1544472161633" duration="1513000" />
+      <workItem from="1544519468763" duration="68000" />
+      <workItem from="1544556177121" duration="24458000" />
+      <workItem from="1544625551376" duration="8543000" />
+      <workItem from="1544636388218" duration="11254000" />
+      <workItem from="1545055096801" duration="35549000" />
+      <workItem from="1546552366033" duration="491000" />
+      <workItem from="1547129203450" duration="1109000" />
+      <workItem from="1547377423705" duration="7845000" />
+      <workItem from="1547551984909" duration="21499000" />
+    </task>
+    <task id="LOCAL-00001" summary="Criação dos ficheiros individuais e que serão acedidos atravez dos links e respetiva linkagem pela barra de navegação. Melhora no aspeto visual da consola de testes.">
+      <created>1544581102257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544581102257</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Criação dos ficheiros individuais e que serão acedidos atravez dos links e respetiva linkagem pela barra de navegação. Melhora no aspeto visual da consola de testes.">
+      <created>1544581436699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544581436699</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Preenchimento da pagina de caracteres especiais e chavetas">
+      <created>1544637739416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544637739416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Preenchimento da pagina de Frações e Sub/SuperScripts">
+      <created>1544642916854</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544642916854</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Preenchimento da pagina de Integrais.. e Indexação de Equações">
+      <created>1544646153861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544646153861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Preenchimento da pagina de Matrizes">
+      <created>1544646924985</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544646924985</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Melhoramento do ambiente de testes">
+      <created>1545068289735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545068289735</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finalização do ambiente de testes">
+      <created>1545125369153</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545125369154</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Pagina Home">
+      <created>1545144713845</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545144713845</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Pagina Home">
+      <created>1545145038185</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545145038185</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adição do footer, pagina sobre">
+      <created>1545254908680</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545254908680</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adição do footer, pagina sobre">
+      <created>1545255537200</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545255537200</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Correção do footer">
+      <created>1545255555190</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545255555190</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Correção do footer">
+      <created>1545255623224</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545255623224</updated>
+    </task>
+    <task id="LOCAL-00015" summary="minor changes">
+      <created>1545312546968</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545312546968</updated>
+    </task>
+    <task id="LOCAL-00016" summary="criação de alt's nas imagens e remoção de algumas paginas predefinidas do template utilizado">
+      <created>1547377971646</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547377971646</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Alteração da tag &lt;font&gt; para a tag &lt;span&gt; com atributo style:">
+      <created>1547380958251</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547380958251</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Alteração da tag &lt;font&gt; para a tag &lt;span&gt; com atributo style:">
+      <created>1547381122907</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547381122907</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Alteração da tag &lt;font&gt; para a tag &lt;span&gt; com atributo style:">
+      <created>1547410551069</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1547410551070</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Alteração do encoding da file historia.html">
+      <created>1547411311534</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1547411311534</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Alteração do encoding da file historia.html">
+      <created>1547411330231</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1547411330231</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Criação de um sistema de cookies para unlocks na consola de testes">
+      <created>1547568159406</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1547568159406</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Criação de um sistema de cookies para unlocks na consola de testes">
+      <created>1547568196596</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1547568196596</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Tittle icon">
+      <created>1547569088391</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547569088391</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Tittle icon">
+      <created>1547569298037</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547569298037</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Tittle icon">
+      <created>1547569307990</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1547569307991</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Tittle icon">
+      <created>1547569385856</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1547569385856</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="112329000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16912752" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação dos ficheiros individuais e que serão acedidos atravez dos links e respetiva linkagem pela barra de navegação. Melhora no aspeto visual da consola de testes." />
+    <MESSAGE value="Preenchimento da pagina de caracteres especiais e chavetas" />
+    <MESSAGE value="Preenchimento da pagina de Frações e Sub/SuperScripts" />
+    <MESSAGE value="Preenchimento da pagina de Integrais.. e Indexação de Equações" />
+    <MESSAGE value="Preenchimento da pagina de Matrizes" />
+    <MESSAGE value="Melhoramento do ambiente de testes" />
+    <MESSAGE value="Finalização do ambiente de testes" />
+    <MESSAGE value="Pagina Home" />
+    <MESSAGE value="Adição do footer, pagina sobre" />
+    <MESSAGE value="Correção do footer" />
+    <MESSAGE value="minor changes" />
+    <MESSAGE value="criação de alt's nas imagens e remoção de algumas paginas predefinidas do template utilizado" />
+    <MESSAGE value="Alteração da tag &lt;font&gt; para a tag &lt;span&gt; com atributo style:" />
+    <MESSAGE value="Alteração do encoding da file historia.html" />
+    <MESSAGE value="Criação de um sistema de cookies para unlocks na consola de testes" />
+    <MESSAGE value="Tittle icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tittle icon" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/ico/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/assets/js/google-code-prettify/prettify.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.css" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="537" column="16" selection-start-line="537" selection-start-column="16" selection-end-line="537" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/AmbienteTeste.html" />
+    <entry file="file://$PROJECT_DIR$/Final/Includables/imports.html" />
+    <entry file="file://$PROJECT_DIR$/Template/assets/img/slides/flexslider/img1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/assets/img/slides/flexslider/img3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/assets/img/slides/flexslider/img2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/index.html" />
+    <entry file="file://$PROJECT_DIR$/Final/Includables/importsEnd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/comandosmaiscomunsdomododematematica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" selection-start-line="41" selection-end-line="44" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/listas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/comoutilizaromododematematica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/tabelas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/indexacaodeequacoes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Filosofia/wysiwym.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Filosofia/wysiwyg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Filosofia/contras.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Filosofia/pros.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/criacaograficos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/estruturadecomandos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/listasetabelas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/modomatematica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/pacoteslatex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/projetoscomlatexcomandoinput.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/referenciasadocumentosexternos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/portfolio-2cols.html" />
+    <entry file="file://$PROJECT_DIR$/Final/Features/inclusaodeimagens.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/assets/ua.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/assets/uab.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template/assets/js/jquery.flexslider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="239" column="67" selection-start-line="239" selection-start-column="67" selection-end-line="239" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/fonteselinguagens.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Outros/historia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testes/ConsolaDeTesteLatex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#textarea#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/chavetas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+          <folding>
+            <element signature="e#961#967#0" expanded="true" />
+            <element signature="e#967#973#0" expanded="true" />
+            <element signature="e#973#979#0" expanded="true" />
+            <element signature="e#979#985#0" expanded="true" />
+            <element signature="e#985#991#0" expanded="true" />
+            <element signature="e#991#997#0" expanded="true" />
+            <element signature="e#997#1003#0" expanded="true" />
+            <element signature="e#1003#1009#0" expanded="true" />
+            <element signature="e#1009#1015#0" expanded="true" />
+            <element signature="e#1015#1021#0" expanded="true" />
+            <element signature="e#1021#1027#0" expanded="true" />
+            <element signature="e#1027#1033#0" expanded="true" />
+            <element signature="e#1033#1039#0" expanded="true" />
+            <element signature="e#1039#1045#0" expanded="true" />
+            <element signature="e#1045#1051#0" expanded="true" />
+            <element signature="e#1051#1057#0" expanded="true" />
+            <element signature="e#1057#1063#0" expanded="true" />
+            <element signature="e#1063#1069#0" expanded="true" />
+            <element signature="e#1069#1075#0" expanded="true" />
+            <element signature="e#1075#1081#0" expanded="true" />
+            <element signature="e#1105#1111#0" expanded="true" />
+            <element signature="e#1111#1117#0" expanded="true" />
+            <element signature="e#1117#1123#0" expanded="true" />
+            <element signature="e#1123#1129#0" expanded="true" />
+            <element signature="e#1129#1135#0" expanded="true" />
+            <element signature="e#1135#1141#0" expanded="true" />
+            <element signature="e#1141#1147#0" expanded="true" />
+            <element signature="e#1147#1153#0" expanded="true" />
+            <element signature="e#1153#1159#0" expanded="true" />
+            <element signature="e#1159#1165#0" expanded="true" />
+            <element signature="e#1165#1171#0" expanded="true" />
+            <element signature="e#1171#1177#0" expanded="true" />
+            <element signature="e#1177#1183#0" expanded="true" />
+            <element signature="e#1183#1189#0" expanded="true" />
+            <element signature="e#1189#1195#0" expanded="true" />
+            <element signature="e#1195#1201#0" expanded="true" />
+            <element signature="e#1275#1281#0" expanded="true" />
+            <element signature="e#1281#1287#0" expanded="true" />
+            <element signature="e#1287#1293#0" expanded="true" />
+            <element signature="e#1293#1299#0" expanded="true" />
+            <element signature="e#1323#1329#0" expanded="true" />
+            <element signature="e#1329#1335#0" expanded="true" />
+            <element signature="e#1335#1341#0" expanded="true" />
+            <element signature="e#1341#1347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/radicais.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/integraissomatoriosprodutorioselimites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/superscriptsesubscripts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/matrizes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/fracoes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Features/caracteresespeciais.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Matematica/caracteresespeciaisdomododematematica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Includables/importsInit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/AmbienteTeste/AmbienteTeste.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Includables/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="118" column="91" selection-start-line="118" selection-start-column="91" selection-end-line="118" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Outros/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="46" column="117" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="286" column="25" lean-forward="true" selection-start-line="286" selection-start-column="25" selection-end-line="286" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#2;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#3;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final/Includables/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#address#0;n#div#0;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#script#0;n#ul#0;n#div#1;n#div#2;n#div#0;n#div#0;n#footer#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

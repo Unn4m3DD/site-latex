@@ -1,0 +1,22 @@
+Devido ao seu cariz principalmente académico, \LaTeX suporta a inclusão de referências a bibliografia, utilizando o comando de referência "\textbackslash cite\{nome\}" em conjunto com o comando de definição "\@ misc\{nome, atributos\}", como por exemplo:
+
+\begin{verbatim}
+%comando de definição
+@misc{tnssl,
+    author={{Tobias Oetiker}},
+    title={{The Not So Short Introduction to \LaTeX}},
+    month={Março},
+    year={2018},
+    note = "Online; acedido em Novembro de 2018]"
+}
+
+%comando de citação
+\cite{tnssl}
+\end{verbatim}
+ 
+O resultado obtido com a citação é semelhante a este \cite{tnssl}
+
+Podemos incluir as definições num documento externo através do comando "\textbackslash input\{\}" (aprofundado na \autoref{chap.projetoscomlatexcomandoinput}) mas o mais comum é criar um ficheiro com a extensão ".bib" e utilizar o comando "\textbackslash bibliography\{filename\}" para referenciar que é um ficheiro de bibliografia.
+
+Utiliza-se o comando "\textbackslash printbibliography" para indicar ao compilador onde deve ser escrita a bibliográfica caso referenciada.
+

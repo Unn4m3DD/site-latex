@@ -1,0 +1,11 @@
+\textbackslash textrm\{textrm\}&\textrm{textrm}\\ \hline
+\textbackslash textsf\{textsf\}&\textsf{textsf}\\ \hline
+\textbackslash texttt\{texttt\}&\texttt{texttt}\\ \hline
+\textbackslash textmd\{textmd\}&\textmd{textmd}\\ \hline
+\textbackslash textbf\{textbf\}&\textbf{textbf}\\ \hline
+\textbackslash textup\{textup\}&\textup{textup}\\ \hline
+\textbackslash textit\{textit\}&\textit{textit}\\ \hline
+\textbackslash textsl\{textsl\}&\textsl{textsl}\\ \hline
+\textbackslash textsc\{textsc\}&\textsc{textsc}\\ \hline
+\textbackslash emph\{emph\}&\emph{emph}\\ \hline
+\textbackslash textnormal\{textnormal\}&\textnormal{textnormal}\\ \hline

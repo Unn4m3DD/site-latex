@@ -1,0 +1,75 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+            <h1>Inclusão de imagens: </h1>
+            <p>O ~\LaTeX~ não consegue manipular imagens sozinho,precisamos de adicionar o pacote <b>graphicx</b>.
+            <br> Para usa-lo basta usar \usepackage{graphicsx} no inicio do documento</p>
+            <p>O comando \graphicspath{ {./imagens/} } diz ao ~\LaTeX~ que as imagens são guardadas no diretório "imagens"
+            <br> dentro do diretório do documento principal</p>
+            <p>O comando \includegraphics{"nome da imagem"} é o comando cujo inclui as imagens no documento.
+            <br>Vamos usar como exemplo uma imagem aleatória para um objeto estático :</p>
+            
+            <p> Podemos observar um urso - \includegraphics[width=0.5]{urso.pdf} - no meio desta frase ,que originaria o resultado:
+            <br> Podemos observar um urso  -<img src="../assets/urso.jpg" alt="imagem de um urso" width="40" height="40">- no meio desta frase</p>
+            
+            <p>Aqui reparamos que urso é o nome do ficheiro que contém a imagem do urso,depois urso.pdf torna-se na imagem<br>Também é possivel utilizar esta imagem dentro de um objeto flutuante:</p>
+            <pre>
+                \documentclass{article}
+                \usepackage{graphicx}
+                \graphicspath{ {./images/} }
+                     
+                \begin{document}
+                    podemos incluir imagens aleatórias ao nosso gosto.
+                     
+                    \includegraphics{urso.pdf}
+                     
+                    Em cima temos uma imagem aleatória.
+                \end{document}
+            </pre>
+            <style> figure{
+                align-self: center;
+                text-align: center;
+                font-style: italic;
+                font-size: smaller;
+                text-indent: 0;
+                margin: 0.5 em;
+                padding: 0.5em;
+                }
+            </style>
+            <figure>
+
+                <img class="displayed" src="../assets/urso.jpg" alt="Imagem de um Urso" height="50" width="70">
+                <figcaption> Em cima temos uma imagem aleatória</figcaption>
+            </figure>
+            
+            <p> Podem existir vários ficheiros para a mesma imagem, cada um com o seu formato, e deste modo facilita-se a
+            compilação do documento para formatos de saída diferentes.<br>
+            O comando de inclusão de imagens possui várias opções, entre as quais as que permitem redimensionar
+            ou de outra forma ajustar a imagem a incluir: </p>
+
+            <p><b>height</b> - altura da imagem.</p>
+
+            <p><b>width</b>- largura da imagem.</p>
+
+            <p><b>scale</b> - fator de escala.</p>
+
+            <p><b>angle</b> - ângulo de rotação.</p>
+
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

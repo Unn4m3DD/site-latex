@@ -1,0 +1,57 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+			<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        <h1>Integrais ,Somatórios,produtos e limites</h1>
+
+		<p>O uso de integrais e somatórios em \LaTeX tem as suas particularidade e pode variar com de acordo com gosto
+			pessoal.
+			A forma mais simples de representar um integral, um somatório, um produtório e um limite é com os comandos
+			"\int" (~\int~) ,	"\sum" (~\sum~), "\prod" (~\prod~) e "\lim" (~\lim~).</p>
+
+		<p>Para além destas existem também as formas compostas com limites superiores e inferiores que podem ser
+			representadas de duas formas,
+			utilizando os já vistos superscript e subscript ou um novo comando chamado "\limits^_ ". O comando
+			"\displaystyle" também afeta a forma como é apresentada a fórmula. A única diferença entre os dois comandos
+			é a forma de representação final.</p>
+
+		<p>Ao utilizar os comandos de superscript e subscript temos:
+			~~{\int^b_a f(x) dx = \lim_{||\Delta x|| \to 0} \sum_{i=1}^{n} f(x_i^*)\Delta x_i}~~
+			Gerado com o código: $${\int^b_a f(x)dx=\lim_{||\Delta x||\to 0}\sum_{i=1}^{n}f(x_i^*)\Delta x_i}$$</p>
+
+		<p>Com os comandos de limite temos:
+			~~{\int \limits^b_a f(x) dx = \lim \limits_{||\Delta x|| \to 0} \sum \limits_{i=1}^{n} f(x_i^*)\Delta x_i}~~
+			Gerado com o código:
+			$${\int \limits^b_a f(x)dx=\lim \limits_{||\Delta x||\to 0}\sum\limits_{i=1}^{n}f(x_i^*)\Delta x_i}$$</p>
+
+
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+            function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "$${\\int^b_a f(x) dx = \\lim_{||\\Delta x|| \\to 0} \\sum_{i=1}^{n} f(x_i^*)\\Delta x_i}$$"
+                innerDoc.getElementById("orig").innerText = "$${\\int^b_a f(x) dx = \\lim_{||\\Delta x|| \\to 0} \\sum_{i=1}^{n} f(x_i^*)\\Delta x_i}$$"
+                unlock([4,5,6,7,8,9,10])//função definida na navbar
+            }
+		</script>
+
+
+
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

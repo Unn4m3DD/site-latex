@@ -1,0 +1,71 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+		<h1>Chavetas</h1>
+		<p>Em ~\LaTeX~ existem vários tipos de chavetas, a mais simples é a chaveta utilizada para representar sistemas
+			de equações com o comando "\<span></span>begin{cases} ... \end{cases}":</p>
+		~~
+		f(x) = \begin{cases}
+		1 & \text{ , se } x < 2 \\
+		b & \text{ , se } x \le 2 \\
+		\end{cases}
+		~~
+
+		<p>Gerado com o código:</p>
+		<pre><code> f(x) = \<span></span>begin{cases}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 & \text{ , se } x < 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b & \text{ , se } x \le 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\end{cases}</code></pre>
+
+		<p>Podem ainda usar-se chavetas em cima e em baixo de equações com os comandos "\underbrace" e "\overbrace":</p>
+
+		<p>~~\overbrace{a+a}^{2a} + \underbrace{b+b}_{2b} = 2a + 2b~~</p>
+
+		<p>Gerado com o código:</p>
+		<pre><code>$$ \overbrace{a+a}^{2a} + \underbrace{b+b}_{2b} = 2a + 2b$$</code></pre>
+
+		<h2>Para que possa testar:</h2>
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+			function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "\\begin{cases}\n" +
+                    "1 & \\text{ , se } x < 2 \\\\\n" +
+                    "b & \\text{ , se } x \\le 2 \\\\\n" +
+                    "\\end{cases}"
+                innerDoc.getElementById("orig").innerText = "\\begin{cases}\n" +
+                    "1 & \\text{ , se } x < 2 \\\\\n" +
+                    "b & \\text{ , se } x \\le 2 \\\\\n" +
+                    "\\end{cases}"
+                unlock([13,14])//função definida na navbar
+            }
+		</script>
+		<iframe id ="teste2" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load2()"></iframe>
+		<script>
+            function load2() {
+                var iframe = document.getElementById("teste2");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "$$ \\overbrace{a+a}^{2a} + \\underbrace{b+b}_{2b} = 2a + 2b$$"
+                innerDoc.getElementById("orig").innerText = "$$ \\overbrace{a+a}^{2a} + \\underbrace{b+b}_{2b} = 2a + 2b$$"
+            }
+		</script>
+
+		<div id="importsEnd"></div>
+		<script>$(document).ready(function(){$("#importsEnd").load("../Includables/importsEnd.html");});</script>
+	</body>
+	</html>
+	

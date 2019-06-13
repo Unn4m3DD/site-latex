@@ -1,0 +1,56 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        <h1>Tabelas</h1>  
+            <p>As tabelas em ~\LaTeX~ são um comando ligeiramente mais complexo que as listas. Uma tabela simples começa com o comando "\begin<span></span>    {table}[mod] ... \end{table}". Este modificador geralmente é "h" para "here", indicando que a tabela vai ser posta, se possivel, no lugar        relativo ao codigo que a descreve. No interior deste comando é inserido outro "\begin<span></span>{tabular}{tipo}\end{tabular}", seja o tipo a forma como os items estão dispostos horizontalmente, com ou sem linha vertical a separa-los, alinhados ao centro (c), à esquerda (l) ou à diretia (r). Para além destes é ainda possivel decidir quando existe uma quebra de linhas com o comando "\\" e se existirá uma linha horizontal entre as duas linhas com o comando "\hline", items são separados por um e comercial "&":</p>
+        
+            
+        <table border=1 width="60"  style="margin: auto" >
+            <tr>
+                <td>  </td>
+                <td> 0 </td>
+                <td> 1 </td>
+            </tr>
+            <tr><td> 0 </td>
+                <td> 00 </td>
+                <td> 10 </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>01</td>
+                <td>11</td>
+            </tr>
+        </table>
+        <br>
+            <p>Gerado com o código:</p>
+            
+            <p>\begin<span></span>{table}[h]<br>
+                \center<br>
+                \begin<span></span>{tabular}{|c|l|r}<br>
+                \hline<br>
+                & 0 & 1 \\ \hline<br>
+                0 & 00 & 10 \\ \hline<br>
+                1 & 01 & 11 \\ <br>
+                \end{tabular}<br>
+                \end{table}<br>
+            </p>
+        
+            
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

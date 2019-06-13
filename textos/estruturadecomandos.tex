@@ -1,0 +1,32 @@
+Um arquivo fonte do \LaTeX contém ,além do texto a ser processado, comandos que indicam como o texto deve ser processado.Palavras são separadas por um ou mais espaços.Parágrafos separados por uma ou mais linhas em branco. A saída não é afetada por espaços extra ou por linhas em branco extras. A maioria dos comandos do \LaTeX são iniciadas com o caracter "\textbackslash ".\cite{Reginaldo} Uma "\textbackslash " sozinha produz um espaço.Um ambiente é uma região do texto que tem um tratamento especial. Um ambiente é iniciado com
+
+\textbackslash begin\{nome do ambiente\} e terminado por $\backslash$end\{nome do ambiente\}.
+
+O normal padrão de comandos são do tipo \textbackslash comando\{argumento\}[Modifier] ou \textbackslash comando\{argumento\} ou até apenas \textbackslash comando.
+
+Exemplos: 
+
+ $$\textbackslash sqrt[3]\{x\} \rightarrow \sqrt[3]{x}$$
+
+ $$\textbackslash sqrt\{x\} \rightarrow \sqrt{x}$$
+ 
+
+
+\begin{verbatim}
+$
+f(x) = \begin{cases}
+1 & \text{ , se } x < 2 \\
+b & \text{ , se } x \le 2 \\
+\end{cases}
+$
+
+\end{verbatim}
+
+Gera: 
+$$
+f(x) = \begin{cases}
+1 & \text{ , se } x < 2 \\
+b & \text{ , se } x \le 2 \\
+\end{cases}
+$$
+\\

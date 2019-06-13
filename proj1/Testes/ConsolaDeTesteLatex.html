@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$']]}
+        });
+    </script>
+
+    <style>
+        li{
+            display: inline;
+            float: left;
+            width: 50%;
+            height: 80%;
+        }
+        ul{
+            display:inline-block;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+            padding-left: 0;
+        }
+        .box{
+            width: 87%;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid;
+        }
+        html, body
+        {
+            height:100%;
+        }
+    </style>
+    <link href="../Template/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../Template/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../Template/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="../Template/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="../Template/assets/css/flexslider.css" rel="stylesheet">
+    <link href="../Template/assets/css/style.css" rel="stylesheet">
+    <link href="../Template/assets/color/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+</head>
+<body>
+<ul>
+    <li>
+        <textarea onkeyup='compile()' class="input-block-level box " style="resize: none; width: 95%;height: 100%;" id ="orig">
+$\sum_{i=1}^2 2i$
+$$\int_{i=1}^2 2i$$ </textarea>
+    </li>
+    <li >
+        <div class="box" id="latex" style="height: 67%;">
+            $\sum_{i=1}^2 2i$
+            $$\int_{i=1}^2 2i$$
+        </div>
+    </li>
+</ul>
+<script>
+    function compile() {
+            document.getElementById("latex").innerHTML = "";
+            sArr = document.getElementById("orig").value.split("\n");
+
+            sArr.forEach(function(s){
+                if(s != "")
+                    document.getElementById("latex").innerHTML += s +"<br>";
+            });
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+
+
+</script>
+</body>
+</html>

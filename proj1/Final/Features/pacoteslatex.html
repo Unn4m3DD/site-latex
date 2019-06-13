@@ -1,0 +1,34 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+            <header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+            <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+             <h1>Pacotes ~\LaTeX~ :</h1>
+            <p>O ~\LaTeX~ define um conjunto básico de macros para edição de textos. Caso o utilizador queria usar alguma função mais complexa, o ~\LaTeX~ permite que ele inclua arquivos com novos macros. Esses arquivos são chamados de pacotes. Existem pacotes para escrever a cor , para incluir figuras , etc ... O utilizador pode ainda até criar o seu próprio pacote. </p>
+            
+            <p>Para incluir um pacote basta usar : \usepackage[opção]{nome do pacote}</p>
+            
+            <p>Alguns pacotes podem ser incluídos usando opções diferentes . A opção deve ser inserida entre parêntesis retos antes do nome do pacote.Neste exemplo :</p>
+            
+            <p>\usepackage[portuguese]{babel}</p>
+            
+            <p>O pacote babel define macros para edição de textos em diversas línguas . Como queríamos escrever em Português pusemos a opção portuguese. As distribuições do \LaTeX costumam vir com um conjunto amplo de pacotes. Outros pacotes podem ser instalados da mesma forma.</p>
+            
+            
+            
+            <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+			<div id="footer"></div>
+			<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="importsInit"></div>
+<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+<body>
+<div id="wrapper">
+	<header id="navBar">
+		<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+	</header>
+
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	<script>
+        unlock([0])//função definida na navbar
+    </script>
+<h1>Frações</h1>
+<p>Para introduzir frações é utilizado o comando "\frac{numerador}{denominador}"</p>
+
+~~\frac{numerador}{denominador}~~
+
+<p>Em ~\LaTeX~ podem fazer-se frações dentro de frações, aninhando (do inglês nest) comandos:</p>
+
+~~\frac{a + \frac{b}{c}}{d}~~
+
+<p>Com este tipo de comando deve ter-se especial cuidado com o <a>ILMM</a> pois pode tornar-se ilegível, por
+	exemplo em:</p>
+<p>"~\frac{\frac{\frac{a}{b}}{c}}{\frac{d}{\frac{e}{f}}}~" , neste caso é aconselhada a utilização do
+	"\displaystyle{}"
+	para cada fração:
+	"~\displaystyle{\frac{\displaystyle{\frac{\displaystyle{\frac{a}{b}}}{c}}}{\displaystyle{\frac{d}{\displaystyle{\frac{e}{f}}}}}}~"
+	ou o <a href="">NLMM</a>. De notar que o comando com frações e
+	displaystyles alinhados é extremamente confuso:</p>
+<p>$\displaystyle{\frac{\displaystyle{\frac{\displaystyle{\frac{a}{b}
+	}}{c}}}{\displaystyle{\frac{d}{\displaystyle{\frac{e}{f}}}}}}$.</p>
+
+<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+<script>
+    function load() {
+        var iframe = document.getElementById("teste1");
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        innerDoc.getElementById("latex").innerHTML = "$$\\frac{a + \\frac{b}{c}}{d}$$"
+        innerDoc.getElementById("orig").innerText = "$$\\frac{a + \\frac{b}{c}}{d}$$"
+        unlock([0])//função definida na navbar
+    }
+</script>
+	<div id="footer"></div>
+	<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+</body>
+</html>
+	

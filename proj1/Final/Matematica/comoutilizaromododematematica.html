@@ -1,0 +1,38 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<h1>Como Utilizar o modo de Matemática?</h1>
+		<p>Existem dois modos de escrever matemática em ~\LaTeX~ , um é o <a>ILMM</a> (In Line Math Mode) que é iniciado terminado por um único cifrão, "$", e que vai escrever a
+		fórmula na linha onde é escrita reduzindo a formatação de texto para que encaixe na linha, o outro é o NLMM (New Line Math Mode) que inicía e
+		termina com um cifrão duplo "$$" e vai criar a fórmula centrada numa nova linha com toda a formatação possível. Pode ainda usar-se o comando
+		"\ begin{equation} ... \end{equation}", este comando será discutido <a href="indexacaodeequacoes.html">aqui</a>.</p>
+
+		<p>Por exemplo no <a>ILMM</a> "\int\limits_{a}^{b} f(x)" apareceria da seguinte forma:
+		" ~\int \limits_{a}^{b} f(x)~ " enquanto que no <a>NLMM</a> seria:
+		~~\int \limits_{a}^{b} f(x)~~
+		</p>
+		<p>
+		Existe ainda uma forma de utilizar o <a>ILMM</a> com a formatação completa, o comando "\displaystyle{}", o que por vezes
+		pode criar grandes espaçamentos entre linhas.
+		Por exemplo o comando "\displaystyle{\int\limits{a}^{b} f(x)}"  tornar-se-ia "~\displaystyle{\int \limits_{a}^{b} f(x)}~"
+		</p>
+		<h2>Para que possa testar:</h2>
+		<iframe src="../../Testes/ConsolaDeTesteLatex.html" width="100%" scrolling="no"></iframe>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

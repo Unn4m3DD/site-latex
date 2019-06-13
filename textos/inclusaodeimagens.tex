@@ -1,0 +1,82 @@
+
+Imagens são elementos essenciais em quase todos os documentos científicos. O \LaTeX providência várias opções para manipular imagens e faze-las parecer exatamente como o utilizador precisa,no entanto,o \LaTeX não possui nenhum mecanismo nativo de inclusão de imagens, temos que recorrer ao uso de packages.\cite{labi} Neste subcapitulo vamos explicar como incluir imagens nos formatos mais comuns , como encolhe-las ,como as aumentar ,como as rodar, e ainda como as referenciar nos documentos.
+
+Vamos usar como exemplo o uso do logotipo da UA.
+
+\begin{verbatim}
+Aqui - \includegraphics[scale=0.5]{ua.pdf}
+ - o logotipo da UA.
+\end{verbatim}
+
+que origina o resultado :
+
+Aqui - \includegraphics[scale=0.5]{ua.pdf} - o logotipo da UA.
+
+Também é possivel utilizar esta imagem dentro de de um objeto flutuante:
+
+\begin{verbatim}
+\begin{figure}[h]
+\center %imagem centrada
+\includegraphics[scale=0.5]{ua.pdf}
+\caption{Logotipo da UA} %legenda
+\label{fig:ualogo.1}
+\end{figure}
+\end{verbatim}
+
+\begin{figure}[h]
+\center %imagem centrada
+\includegraphics[scale=0.5]{ua.pdf}
+\caption{Logotipo da UA} %legenda
+\label{fig:ualogo.1}
+\end{figure}
+
+Na inclusão de um ficheiro é usual indicar o seu nome sem extensão (nos casos acima o nome
+completo do ficheiro é ua.pdf e está na pasta do próprio documento). Com efeito, podem existir
+vários ficheiros para a mesma imagem, cada um com o seu formato, e deste modo facilita-se a
+compilação do documento para formatos de saída diferentes.
+O comando de inclusão de imagens possui várias opções, entre as quais as que permitem redimensionar
+ou de outra forma ajustar a imagem a incluir:
+
+\textbf{height} - altura da imagem.
+
+\textbf{width} - largura da imagem.
+
+\textbf{scale} - fator de escala.
+
+\textbf{angle} - ângulo de rotação.
+
+
+Mais a baixo , na figura 3.2 vamos mostrar vários exemplos uteis de como a inclusão de imagem funcionam:
+
+\begin{verbatim}
+\begin{figure}[h]
+\center % Centra as imagens
+a) \includegraphics{ua.pdf}
+b) \includegraphics[height=2cm]{ua.pdf}
+c) \includegraphics[width=10mm]{ua.pdf}
+d) \includegraphics[scale=.5,angle=90]{ua.pdf}
+e) \includegraphics[height=5mm,width=2cm]{ua.pdf}
+\caption{Logotipo da Universidade de Aveiro: a) na dimensão real,
+b) com 2cm de altura, c) com 10mm de largura, d) com altura e largura
+reduzidas a $1/2$ e simultaneamente rodado 90º e e) com uma modificação
+anamórfica da altura e da largura.}
+\label{fig:ualogo.2}
+\end{figure}
+\end{verbatim}
+
+\begin{figure}[h]
+\center % Centra as imagens
+a) \includegraphics{ua.pdf}
+b) \includegraphics[height=2cm]{ua.pdf}
+c) \includegraphics[width=10mm]{ua.pdf}
+d) \includegraphics[scale=.5,angle=90]{ua.pdf}
+e) \includegraphics[height=5mm,width=2cm]{ua.pdf}
+\caption{Logotipo da Universidade de Aveiro: a) na dimensão real,
+b) com 2cm de altura, c) com 10mm de largura, d) com altura e largura
+reduzidas a $1/2$ e simultaneamente rodado 90º e e) com uma modificação
+anamórfica da altura e da largura.}
+\label{fig:ualogo.2}
+\end{figure}
+
+
+

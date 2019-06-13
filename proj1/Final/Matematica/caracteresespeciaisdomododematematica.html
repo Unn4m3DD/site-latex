@@ -1,0 +1,95 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html")});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        
+        <h1>Caracteres Especiais Do Modo Matemática</h1>
+		<p>Em matemática regularmente é necessária a introdução de alguns caracteres diferentes dos ASCII que temos
+			no teclado.
+			Geralmente estes são letras gregas que podem ser obtidas pelo seu nome em inglês, no geral, pelo comando
+			"\nome"
+			para letras minúsculas e pelo comando "\Nome" para letras maiúsculas.</p>
+
+		<p>Exemplificando:</p>
+		<table  align="center" style="width: 25%;">
+			<tr>
+				<th>Código</th><th>Output</th>
+			</tr>
+			<tr>
+				<th>\phi</th><th>~\phi~</th>
+			</tr>
+			<tr>
+				<th>\Phi</th><th>~\Phi~</th>
+			</tr>
+			<tr>
+				<th>\delta</th><th>~\delta~</th>
+			</tr>
+			<tr>
+				<th>\Delta</th><th>~\Delta~</th>
+			</tr>
+		</table>
+
+		<p>Podem também introduzir-se caracteres como infinito e "tender para" com os comandos "\infty" (~\infty~) e
+			"\to" (~\to~).</p>
+
+		<p>Em matemática uma forma comum de representar somatórios é com uma soma incluindo 3 pontinhos no meio da
+			fórmula:</p>
+		~~\sum_{i = 0}^{n} i = 1 + 2 + 3 + \dots + n~~
+
+		<p>Estes 3 pontinhos podem ser obtidos com o comando "\dots". Variantes deste símbolo com pontos na vertical e
+			diagonal para matrizes por exemplo conseguem-se com as variações "\vdots"  ~\vdots~ e "\ddtos" ~\ddots~</p>
+
+		<p>Podem representar-se desigualdades como o comando "\tipo" seja o tipo as iniciais da desigualdade em
+			inglês:</p>
+		<table  align="center" style="width: 30%;">
+			<tr>
+				<th>Código</th><th>Output</th><th>Nome Em Inglês</th>
+			</tr>
+			<tr>
+				<th>\ne</th><th>~\ne~</th><th>Not Equal</th>
+			</tr>
+			<tr>
+				<th>\leq</th><th>~\leq~</th><th>Lesser or EQual</th>
+			</tr>
+			<tr>
+				<th>\geq</th><th>~\geq~</th><th>Greater or EQual</th>
+			</tr>
+			<tr>
+				<th>\equiv</th><th>~\equiv~</th><th>EQUIValent</th>
+			</tr>
+		</table>
+
+		<p>Outros caracteres que podem ser necessários entram na categoria de caracteres compostos, por exemplo o ~\pi~
+			maiúsculo (~\prod~), normalmente usado na matemática como produtório. Este tipo de caracteres será discutido na
+			\autoref{subchap.integrais}.</p>
+
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+            function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "$\\phi$ $\\Phi$ $\\pi$ $\\leq$";
+                innerDoc.getElementById("orig").innerText = "$\\phi$ $\\Phi$ $\\pi$ $\\leq$"
+                unlock([1,2])
+            }
+		</script>
+
+
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

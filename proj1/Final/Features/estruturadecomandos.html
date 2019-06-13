@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="importsInit"></div>
+<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+<body>
+	<div id="wrapper">
+		<header id="navBar">
+			<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+		</header>
+        <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+        <h1>Estrutura de Comandos:</h1>
+        <p>Um arquivo fonte do ~\LaTeX~ contém ,além do texto a ser processado, comandos que indicam como o texto deve ser processado.Palavras são separadas por um ou mais espaços.Parágrafos separados por uma ou mais linhas em branco. A saída não é afetada por espaços extra ou por linhas em branco extras. A maioria dos comandos do ~\LaTeX~ são iniciadas com o caracter "\".Uma "\" sozinha produz um espaço.Um ambiente é uma região do texto que tem um tratamento especial.Um ambiente é iniciado com \begin<span></span>{nome do ambiente} e terminado por \end{nome do ambiente}.</p>
+        
+        <p>O normal padrão de comandos são do tipo \comando{argumento}[Modifier] ou \comando{argumento} ou até apenas \comando.</p>
+        
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+	</div>
+</body>
+</html>
+	

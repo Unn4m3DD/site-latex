@@ -1,0 +1,89 @@
+<!-- Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <div class="widget">
+                    <h5>Outros Sites Relacionados</h5>
+                    <ul class="regular">
+                        <li><a href="https://www.overleaf.com/">Overleaf<i class="icon-leaf"></i></a></li>
+                        <li><a href="https://www.latex-project.org/">Site oficial do ~\LaTeX~</a></li>
+                        <li><a href="https://www.mathjax.org/">Site da lib MathJax <i class="icon-plus"></i></a></li>
+                        <li><a href="https://bootstrapmade.com/lumia-bootstrap-business-template/">Template deste Site (Lumia)</a></li>
+                        <li><a href="https://www.flickr.com/photos/168718884@N04/45471090515/in/album-72157704806870434/">Flickr<i class="icon-arrow-right"></i></a></li>
+                        <li><a href="https://leafletjs.com/">Site da lib Leaflet<i class="icon-map-marker"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="widget">
+                    <h5>Veja Imagens do Desenvolvimento do Site !!</h5>
+                    <a data-flickr-embed="true" data-footer="false" data-context="true"  href="https://www.flickr.com/photos/168718884@N04/45471090515/in/album-72157704806870434/" title="img1"><img src="https://farm5.staticflickr.com/4907/45471090515_8dec18dbbf_n.jpg" width="360" height="140" alt="img1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="widget">
+                    <h5>Sobre Nós</h5>
+                    <address style="margin-bottom: 10px">
+                        <img src="../assets/ua.png" alt="<Logo UA>" height="30" width="30" style="margin-bottom: 4px"> <strong>Universidade de Aveiro</strong><br>
+                        <a href="https://www.ua.pt">Universidade de Aveiro</a><br>
+                        Campus Universitário de Santiago<br>
+                        3810-193 Aveiro, Portugal
+                    </address>
+                    <p>
+                        <i class="icon-envelope-alt"></i> andrepatacas@ua.pt<br>
+                        <i class="icon-envelope"></i> afonsoboto@ua.pt
+                    </p>
+                </div>
+                <div class="widget">
+                    <ul class="social">
+                        <li><a href="#" id="ttshow"  data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square icon-32"></i></a></li>
+                        <!--este script vaí criar um evento que é chamado a cada 1000ms(1 segundo) que muda o link para o perfil de cada um dos criadores do twitter-->
+                        <script>
+                            var links = ['https://mobile.twitter.com/evan_m_williams', 'https://mobile.twitter.com/biz', 'https://mobile.twitter.com/nhglass']
+                            var linkDisplay = document.getElementById("ttshow");
+                            setInterval(nextTwitterCreator,1000);
+                            var currentShown = 0;
+                            function nextTwitterCreator() {
+                                var nextShown = (currentShown + 1) % 3;
+                                linkDisplay.href = (links[nextShown])
+                                currentShown = nextShown;
+                            }
+                        </script>
+                        <li><a href="https://www.facebook.com/zuck" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square icon-32"></i></a></li>
+                        <li><a href="https://pt.linkedin.com/" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square icon-32"></i></a></li>
+                        <li><a href="https://www.pinterest.pt/" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square icon-32"></i></a></li>
+                        <li><a href="https://plus.google.com/discover" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square icon-32"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="verybottom">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <p>
+                        &copy; Lumia - All right reserved
+                    </p>
+                </div>
+                <div class="span6">
+                    <div class="pull-right">
+                        <div class="credits">
+                            <!--
+                              All the links in the footer should remain intact.
+                              You can delete the links only if you purchased the pro version.
+                              Licensing information: https://bootstrapmade.com/license/
+                              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Lumia
+                            -->
+                            Created by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>

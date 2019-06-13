@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="importsInit"></div>
+<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+<body>
+<div id="wrapper">
+	<header id="navBar">
+		<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+	</header>
+
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+<h1>Comandos Comuns do Modo Matemática</h1>
+<p>Alguns dos comandos mais comuns do modo de matemática do ~\LaTeX~ são</p>
+<p>
+<table  align="center" style="width: 50%;">
+	<tr>
+	<th>Código</th><th><a href="">ILMM</a></th><th><a href="">ILMM</a> displaystyle</th></tr><tr>
+	<th>\sqrt{x}</th><th>~\sqrt{x}~</th><th>~\displaystyle{\sqrt{x}}~</th></tr><tr>
+	<th>x^p     </th><th>~x^{p}~   </th><th>~\displaystyle{x^{p}}~   </th></tr><tr>
+	<th>x_b    </th><th>~x_{b}~   </th><th>~\displaystyle{x_b}~     </th></tr><tr>
+	<th>x^p_b  </th><th>~x_b^{p}~ </th><th>~\displaystyle{x_b^{p}}~ </th></tr><tr>
+	<th>\pi     </th><th>~\pi~     </th><th>~\displaystyle{\pi}~     </th></tr><tr>
+	<th>\otimes </th><th>~\otimes~ </th><th>~\displaystyle{\otimes}~ </th></tr><tr>
+	<th>\cup    </th><th>~\cap~    </th><th>~\displaystyle{\cap}~    </th></tr><tr>
+	<th>\subset </th><th>~\subset~ </th><th>~\displaystyle{\subset}~ </th></tr><tr>
+	<th>\sum    </th><th>~\sum~    </th><th>~\displaystyle{\sum}~    </th></tr>
+</table>
+</p>
+<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+<script>
+    function load() {
+        var iframe = document.getElementById("teste1");
+        var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+        innerDoc.getElementById("latex").innerHTML = "$\\sum \\sqrt{x^{p}}$";
+        innerDoc.getElementById("orig").innerText = "$\\sum \\sqrt{x^{p}}$"
+    }
+</script>
+<div id="footer"></div>
+<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+</div>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+</body>
+</html>

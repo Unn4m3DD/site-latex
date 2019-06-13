@@ -1,0 +1,44 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+            <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+            <h1>Caracteres especiais ~\LaTeX~ :</h1>
+            <p>Em ~\LaTeX~ alguns caracteres possuem funções especiais,que normalmente associamos a comandos.
+                A estes caracteres, que normalmente não fazem parte do contéudo do documento,chamamos de caracteres especiais pois assumem um papel essencial   no código fonte de um documento ~\LaTeX~ , estes são:</p>
+            
+            <p><b> & $ % _ { } ^ ~ \ </b></p>
+            
+            <p>Estes são impressos com os comandos: </p>
+        
+            <p>\&  \$  \%  \_  \{  \}  \^{}  \~{} e  \textbackslash respetivamente.</p>
+            
+            <p><b>Caracter "$": </b> Este caracter é usado para inicializar ou terminar o modo matemática.</p>
+            
+            <p><b>Caracter "\": </b> este caracter é o caracter base de qualquer comando, e é sempre apresentado no inicio como em \textback \LaTeX etc..</p>
+            
+            <p><b>Caracter "%" :</b> Este caracter é usado para fazer comentários , ou seja, vai ser ignorado pelo compilador de ~\LaTeX~ . </p>
+            
+            <p><b>Caracter "~" : </b> Este caracter serve para dizer ao compilador que 2 palavras nunca devem ficar separadas em linhas consecutivas mas sim na mesma linha.</p>
+            
+            
+            
+            
+
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+	</body>
+	</html>
+	

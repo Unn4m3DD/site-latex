@@ -1,0 +1,42 @@
+
+	<!DOCTYPE html>
+	<html lang="pt">
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div id="importsInit"></div>
+	<script>$(document).ready(function(){$("#importsInit").load("../Includables/importsInit.html");});</script>
+
+	<body>
+		<div id="wrapper">
+			<header id="navBar">
+				<script>$(document).ready(function(){$("#navBar").load("../Includables/navBar.html");});</script>
+			</header>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+		<h1>SuperScript e Subscript</h1>
+		<p>No modo de matemática do ~\LaTeX~ podem ser usados caracteres escritos como expoente ou base (superscript e
+			subscript)
+			utilizando os caracteres ^ e _ respetivamente.</p>
+		<p>Podem fazer-se combinações de ambos e incluir vários caracteres como expoente ou base. Um exemplo de
+			utilização composta de tudo isto seria:
+			~~log_e(e^{Exemplo Composto})~~</p>
+		<p>Gerado com o código:
+			$$log_e(e^{Exemplo Composto})$$</p>
+
+		<iframe id ="teste1" src="../../Testes/ConsolaDeTesteLatex.html" width="100%"  scrolling="no" onload="load()"></iframe>
+		<script>
+            function load() {
+                var iframe = document.getElementById("teste1");
+                var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                innerDoc.getElementById("latex").innerHTML = "$$log_e(e^{Exemplo Composto})$$"
+                innerDoc.getElementById("orig").innerText = "$$log_e(e^{Exemplo Composto})$$"
+                unlock([11])//função definida na navbar
+            }
+		</script>
+
+		<div id="footer"></div>
+		<script>$(document).ready(function(){$("#footer").load("..\\Includables\\footer.html");});</script><!--inclui aqui o rodapé da pagina , semelhante ao #include em C++-->
+		</div>
+		<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+	</body>
+	</html>
+	

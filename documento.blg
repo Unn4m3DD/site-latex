@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'documento.blg'
+[41] biber:313> INFO - === Fri Nov 23, 2018, 17:42:12
+[79] Biber.pm:371> INFO - Reading 'documento.bcf'
+[197] Biber.pm:857> INFO - Found 3 citekeys in bib section 0
+[225] Biber.pm:3981> INFO - Processing section 0
+[238] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[239] bibtex.pm:1468> INFO - LaTeX decoding ...
+[245] bibtex.pm:1294> INFO - Found BibTeX data source 'bibliografia.bib'
+[253] Utils.pm:169> WARN - month field 'Março' in entry 'tnssl' is not an integer - this will probably not sort properly.
+[259] Utils.pm:169> WARN - year field '2018-2019' in entry 'semautor' is not an integer - this will probably not sort properly.
+[281] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[281] UCollate.pm:68> INFO - Overriding locale 'pt-PT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[281] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'pt-PT'
+[281] Biber.pm:3815> INFO - No sort tailoring available for locale 'pt-PT'
+[285] bbl.pm:617> INFO - Writing 'documento.bbl' with encoding 'UTF-8'
+[287] bbl.pm:720> INFO - Output to documento.bbl
+[288] Biber.pm:110> INFO - WARNINGS: 2
